@@ -1,0 +1,13 @@
+<map id="draw_initial_menu" name="draw_initial_menu">
+<area shape="rect" id="Node000001" title="Function that draws the initial menu on the screen, which allows the player to choose between startin..." alt="" coords="5,5,130,32"/>
+<area shape="rect" id="Node000002" href="$view_8c.html#a1c3347daa6300db135c4b7ddd9596826" title="Function that draws a sprite on the screen." alt="" coords="459,31,579,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,14,260,14,412,23,444,27,443,32,411,28,260,19,130,19"/>
+<area shape="rect" id="Node000004" href="$view_8c.html#a78550ae224ae0ca51b3de81c44477a45" title="Function that draws the current date on the screen." alt="" coords="178,31,258,57"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="131,27,163,32,162,37,130,32"/>
+<area shape="rect" id="Node000003" href="$graphics_8c.html#a3a336b12ce50ab3c4413144515ac6a93" title="Function that draws a pixel on the screen." alt="" coords="627,31,709,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="579,41,611,41,611,47,579,47"/>
+<area shape="poly" id="edge6_Node000004_Node000002" title=" " alt="" coords="258,41,444,41,444,47,258,47"/>
+<area shape="rect" id="Node000005" href="$view_8c.html#a8516cf9221b1daa926c77483a2f59cf6" title="Function that draws the numbers on the screen, according to the current time." alt="" coords="306,81,411,108"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="258,55,306,73,304,78,256,60"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="403,78,459,60,461,65,404,83"/>
+</map>

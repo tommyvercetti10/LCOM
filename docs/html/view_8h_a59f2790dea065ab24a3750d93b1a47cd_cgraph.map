@@ -1,0 +1,7 @@
+<map id="draw_endmenu_score" name="draw_endmenu_score">
+<area shape="rect" id="Node000001" title="Function that draws in the end menu the final score of the winner." alt="" coords="5,5,153,32"/>
+<area shape="rect" id="Node000002" href="$view_8c.html#a1c3347daa6300db135c4b7ddd9596826" title="Function that draws a sprite on the screen." alt="" coords="201,5,320,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="153,16,185,16,185,21,153,21"/>
+<area shape="rect" id="Node000003" href="$graphics_8c.html#a3a336b12ce50ab3c4413144515ac6a93" title="Function that draws a pixel on the screen." alt="" coords="368,5,450,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="320,16,353,16,353,21,320,21"/>
+</map>

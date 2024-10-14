@@ -1,0 +1,5 @@
+<map id="read_from_rtc" name="read_from_rtc">
+<area shape="rect" id="Node000001" title="Function that reads from the RTC." alt="" coords="5,5,106,32"/>
+<area shape="rect" id="Node000002" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title="Function that fetches a 8&#45;bit value instead of a 32&#45;bit value, using sys_inb()." alt="" coords="154,5,244,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,16,138,16,138,21,106,21"/>
+</map>

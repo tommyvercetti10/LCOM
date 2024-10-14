@@ -1,0 +1,18 @@
+<map id="change_kb_state" name="change_kb_state">
+<area shape="rect" id="Node000001" title="Function that changes the state of the keyboard, taking into account the keys pressed...." alt="" coords="5,81,126,108"/>
+<area shape="rect" id="Node000002" href="$game_8c.html#a596ff06ed7cdbde047ff32831a005f53" title="Function that counts the territory of each player." alt="" coords="195,5,300,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,78,173,42,189,35,190,40,175,46,95,83"/>
+<area shape="rect" id="Node000003" href="$model_8c.html#a84746849b0adc0623e8f064ae168c8d6" title="Function that creates the initial player area, with the dimensions given as arguments." alt="" coords="182,56,313,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="126,84,166,78,167,83,126,89"/>
+<area shape="rect" id="Node000004" href="$view_8c.html#acb93a6263ca12e2ed827aa8968d90824" title="Function that frees the buffer used to draw the end menu." alt="" coords="174,107,321,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="126,100,159,105,158,110,126,106"/>
+<area shape="rect" id="Node000005" href="$keyboard_8c.html#ab9e6ed7960d60aa4834f2038247d4536" title="Function that reads the current scancode of the keyboard from the KBC." alt="" coords="218,157,277,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="95,106,175,143,204,154,202,159,173,148,93,111"/>
+<area shape="rect" id="Node000006" href="$keyboard_2_k_b_c_8c.html#a52ac1bb096b341741d01d49dd38c0cd4" title="Function that reads the output of the KBC." alt="" coords="369,157,492,184"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="277,168,354,168,354,173,277,173"/>
+<area shape="rect" id="Node000007" href="$keyboard_2_k_b_c_8c.html#a505885e4583b96e3a35a8d627b71a2f0" title="Function that reads the status of the KBC." alt="" coords="540,132,664,159"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="492,159,525,154,525,159,493,164"/>
+<area shape="rect" id="Node000008" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title="Function that fetches a 8&#45;bit value instead of a 32&#45;bit value, using sys_inb()." alt="" coords="712,157,802,184"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="493,168,696,168,696,173,493,173"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="664,153,696,158,696,163,663,158"/>
+</map>

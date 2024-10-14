@@ -1,0 +1,5 @@
+<map id="read_KBC_status" name="read_KBC_status">
+<area shape="rect" id="Node000001" title="Function that reads the status of the KBC." alt="" coords="5,5,129,32"/>
+<area shape="rect" id="Node000002" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title="Function that fetches a 8&#45;bit value instead of a 32&#45;bit value, using sys_inb()." alt="" coords="177,5,267,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,16,161,16,161,21,129,21"/>
+</map>

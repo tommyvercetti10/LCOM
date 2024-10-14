@@ -1,0 +1,19 @@
+<map id="draw_numbers" name="draw_numbers">
+<area shape="rect" id="Node000001" title="Function that draws the numbers on the screen, according to the current time." alt="" coords="832,31,937,57"/>
+<area shape="rect" id="Node000002" href="$view_8c.html#ae621f77b903bc589198ba904aaf8f838" title="Function that draws the scoreboard on the screen of the game, according to the current score,..." alt="" coords="665,5,784,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="816,36,784,31,785,25,817,31"/>
+<area shape="rect" id="Node000006" href="$view_8c.html#a78550ae224ae0ca51b3de81c44477a45" title="Function that draws the current date on the screen." alt="" coords="684,56,765,83"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="817,57,765,66,764,60,817,52"/>
+<area shape="rect" id="Node000003" href="$view_8c.html#a7e6baca1b635c8aadd95c4d821cda8fc" title="Function that draws the game on the screen, according to the current state of the game,..." alt="" coords="343,5,430,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="649,21,431,21,431,16,649,16"/>
+<area shape="rect" id="Node000004" href="$view_8c.html#aad71fad632657831b2063742509f06ca" title="Function that draws the next frame on the screen, taking into account the current state of the game." alt="" coords="162,56,281,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="329,39,268,58,267,53,328,34"/>
+<area shape="rect" id="Node000005" href="$proj_8c.html#a7a72220d8366dd84709e79ce415862e5" title="Main loop of the game, that handles all the interrupts and the game logic." alt="" coords="5,56,114,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="146,72,114,72,114,67,146,67"/>
+<area shape="rect" id="Node000007" href="$view_8c.html#a2e293823f22abda1c98f45d8035282d8" title="Function that draws the initial menu on the screen, which allows the player to choose between startin..." alt="" coords="492,56,617,83"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="669,72,617,72,617,67,669,67"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="477,72,282,72,282,67,477,67"/>
+<area shape="rect" id="Node000008" href="$view_8c.html#aa72c0c9d88ccd3fde2b5893fbe236b83" title="Function that draws the end menu on the screen, according to the game winner. If the game ended in a ..." alt="" coords="329,107,444,133"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="494,90,434,109,433,104,492,85"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="325,104,267,86,268,81,327,99"/>
+</map>

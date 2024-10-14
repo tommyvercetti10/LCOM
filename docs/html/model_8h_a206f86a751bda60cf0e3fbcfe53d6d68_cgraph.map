@@ -1,0 +1,5 @@
+<map id="free_sprites" name="free_sprites">
+<area shape="rect" id="Node000001" title="Function that frees all sprites." alt="" coords="5,5,94,32"/>
+<area shape="rect" id="Node000002" href="$sprite_8c.html#a607cfeb4f019a84c346eb3bce9da0420" title="Function that destroys a sprite." alt="" coords="142,5,245,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,16,126,16,126,21,94,21"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="get_time_in_binary" name="get_time_in_binary">
+<area shape="rect" id="Node000001" title="Function that, first, checks if the RTC is in binary mode and, if so, gets the time in binary...." alt="" coords="5,5,136,32"/>
+<area shape="rect" id="Node000002" href="$rtc_8c.html#a3d02f3eee33b89342c7c96381a59658f" title="Function that reads from the RTC." alt="" coords="184,5,284,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,16,168,16,168,21,136,21"/>
+<area shape="rect" id="Node000003" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title="Function that fetches a 8&#45;bit value instead of a 32&#45;bit value, using sys_inb()." alt="" coords="332,5,422,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="284,16,316,16,316,21,284,21"/>
+</map>

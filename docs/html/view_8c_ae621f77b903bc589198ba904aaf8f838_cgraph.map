@@ -1,0 +1,10 @@
+<map id="draw_scoreboard" name="draw_scoreboard">
+<area shape="rect" id="Node000001" title="Function that draws the scoreboard on the screen of the game, according to the current score,..." alt="" coords="5,31,125,57"/>
+<area shape="rect" id="Node000002" href="$view_8c.html#a8516cf9221b1daa926c77483a2f59cf6" title="Function that draws the numbers on the screen, according to the current time." alt="" coords="173,5,278,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,32,157,27,158,32,125,37"/>
+<area shape="rect" id="Node000003" href="$view_8c.html#a1c3347daa6300db135c4b7ddd9596826" title="Function that draws a sprite on the screen." alt="" coords="326,31,445,57"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="125,41,310,41,310,47,125,47"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="279,24,311,29,310,35,278,30"/>
+<area shape="rect" id="Node000004" href="$graphics_8c.html#a3a336b12ce50ab3c4413144515ac6a93" title="Function that draws a pixel on the screen." alt="" coords="493,31,576,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="446,41,478,41,478,47,446,47"/>
+</map>

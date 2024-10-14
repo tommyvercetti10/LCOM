@@ -1,0 +1,456 @@
+\doxysection{C\+:/\+Users/\+Utilizador/\+Desktop/\+MINIX-\/\+LCOM/shared/g2/src/model/model.h File Reference}
+\hypertarget{model_8h}{}\label{model_8h}\index{C:/Users/Utilizador/Desktop/MINIX-\/LCOM/shared/g2/src/model/model.h@{C:/Users/Utilizador/Desktop/MINIX-\/LCOM/shared/g2/src/model/model.h}}
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include "{}controller/keyboard/\+KBC.\+h"{}}\newline
+{\ttfamily \#include "{}controller/mouse/mouse.\+h"{}}\newline
+{\ttfamily \#include "{}controller/graphics/graphics.\+h"{}}\newline
+{\ttfamily \#include "{}controller/rtc/rtc.\+h"{}}\newline
+{\ttfamily \#include "{}model/sprite.\+h"{}}\newline
+{\ttfamily \#include "{}game/game.\+h"{}}\newline
+{\ttfamily \#include "{}configs.\+h"{}}\newline
+{\ttfamily \#include "{}xpm/mouse.\+xpm"{}}\newline
+{\ttfamily \#include "{}xpm/menu.\+xpm"{}}\newline
+{\ttfamily \#include "{}xpm/player1.\+xpm"{}}\newline
+{\ttfamily \#include "{}xpm/player2.\+xpm"{}}\newline
+{\ttfamily \#include "{}xpm/p1\+\_\+up.\+xpm"{}}\newline
+{\ttfamily \#include "{}xpm/p1\+\_\+left.\+xpm"{}}\newline
+{\ttfamily \#include "{}xpm/p1\+\_\+right.\+xpm"{}}\newline
+{\ttfamily \#include "{}xpm/p2\+\_\+up.\+xpm"{}}\newline
+{\ttfamily \#include "{}xpm/p2\+\_\+left.\+xpm"{}}\newline
+{\ttfamily \#include "{}xpm/p2\+\_\+right.\+xpm"{}}\newline
+{\ttfamily \#include "{}xpm/arena.\+xpm"{}}\newline
+{\ttfamily \#include "{}xpm/num0.\+xpm"{}}\newline
+{\ttfamily \#include "{}xpm/num1.\+xpm"{}}\newline
+{\ttfamily \#include "{}xpm/num2.\+xpm"{}}\newline
+{\ttfamily \#include "{}xpm/num3.\+xpm"{}}\newline
+{\ttfamily \#include "{}xpm/num4.\+xpm"{}}\newline
+{\ttfamily \#include "{}xpm/num5.\+xpm"{}}\newline
+{\ttfamily \#include "{}xpm/num6.\+xpm"{}}\newline
+{\ttfamily \#include "{}xpm/num7.\+xpm"{}}\newline
+{\ttfamily \#include "{}xpm/num8.\+xpm"{}}\newline
+{\ttfamily \#include "{}xpm/num9.\+xpm"{}}\newline
+{\ttfamily \#include "{}xpm/percentage.\+xpm"{}}\newline
+{\ttfamily \#include "{}xpm/twopoints.\+xpm"{}}\newline
+{\ttfamily \#include "{}xpm/bar.\+xpm"{}}\newline
+{\ttfamily \#include "{}xpm/p1win.\+xpm"{}}\newline
+{\ttfamily \#include "{}xpm/p2win.\+xpm"{}}\newline
+{\ttfamily \#include "{}xpm/controls.\+xpm"{}}\newline
+{\ttfamily \#include "{}view/view.\+h"{}}\newline
+{\ttfamily \#include "{}player.\+h"{}}\newline
+Include dependency graph for model.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_arena}{Arena}}
+\begin{DoxyCompactList}\small\item\em Struct that represents the information of the arena. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{model_8h_a2e092124f706e9898a26f3d0c6dd33d3}{A\+\_\+\+KEY}}~30
+\item 
+\#define \mbox{\hyperlink{model_8h_a8cb726577cd35fc0582744b2270e192f}{W\+\_\+\+KEY}}~17
+\item 
+\#define \mbox{\hyperlink{model_8h_a38916d959d471a2781d390910271b6b5}{S\+\_\+\+KEY}}~31
+\item 
+\#define \mbox{\hyperlink{model_8h_a23c8dc1c6696b91ba6b96f2dca53b7ba}{D\+\_\+\+KEY}}~32
+\item 
+\#define \mbox{\hyperlink{model_8h_a3d8aa05967b559c3e0d0f9f5ce3eacfb}{Q\+\_\+\+KEY}}~16
+\item 
+\#define \mbox{\hyperlink{model_8h_a75ac3acba95812a4be896446cd3051b4}{R\+\_\+\+KEY}}~19
+\item 
+\#define \mbox{\hyperlink{model_8h_afba17fd121bcd7abc852f1ae1f3abb58}{ENTER\+\_\+\+KEY}}~28
+\item 
+\#define \mbox{\hyperlink{model_8h_aefb17eeead0329261a24903952388df9}{M\+\_\+\+KEY}}~50
+\item 
+\#define \mbox{\hyperlink{model_8h_a2c2fd95e748cf3ec6322b35a89fc53bf}{I\+\_\+\+KEY}}~23
+\item 
+\#define \mbox{\hyperlink{model_8h_ac06553a93547334a545098a6ae60ab4f}{J\+\_\+\+KEY}}~36
+\item 
+\#define \mbox{\hyperlink{model_8h_a1d4c75734307f98fc096e756ffac6852}{K\+\_\+\+KEY}}~37
+\item 
+\#define \mbox{\hyperlink{model_8h_a01d053c0e426921f363d45be6c052c39}{L\+\_\+\+KEY}}~38
+\item 
+\#define \mbox{\hyperlink{model_8h_ad411242de334297d01bdadac8f47e90b}{UP\+\_\+\+ARROW\+\_\+\+KEY}}~0x48
+\item 
+\#define \mbox{\hyperlink{model_8h_aea108a18c2f4dbd3bcfb53d5ec9c3e57}{LEFT\+\_\+\+ARROW\+\_\+\+KEY}}~0x4B
+\item 
+\#define \mbox{\hyperlink{model_8h_ad0c8af7976bcbad226a5227851560eeb}{RIGHT\+\_\+\+ARROW\+\_\+\+KEY}}~0x4D
+\item 
+\#define \mbox{\hyperlink{model_8h_af2292687de6b9256a2664a7dacf9ae4a}{DOWN\+\_\+\+ARROW\+\_\+\+KEY}}~0x50
+\item 
+\#define \mbox{\hyperlink{model_8h_adfb2653969987357f3abaaa3c3bdde54}{C\+\_\+\+KEY}}~46
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{model_8h_aa51313be2faacb739a18fdeecefbac75}{System\+State}} \{ \mbox{\hyperlink{model_8h_aa51313be2faacb739a18fdeecefbac75a439c688a4e9ed31638d5922a50680a8e}{RUN}}
+, \mbox{\hyperlink{model_8h_aa51313be2faacb739a18fdeecefbac75a76bdc8adfd6c6463ab269ff4c06be9b4}{QUIT}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum that represents the different states of the system. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{model_8h_aa3041ae4242c0dd57a126d17505443b2}{Menu\+State}} \{ \mbox{\hyperlink{model_8h_aa3041ae4242c0dd57a126d17505443b2a4c40e60bc71a32b924ce1f08d57f9721}{MENU}}
+, \mbox{\hyperlink{model_8h_aa3041ae4242c0dd57a126d17505443b2adc6f24fd6915a3f2786a1b7045406924}{END}}
+, \mbox{\hyperlink{model_8h_aa3041ae4242c0dd57a126d17505443b2a0352906d1ea1dfcd663c918f3a86755b}{PLAY}}
+, \mbox{\hyperlink{model_8h_aa3041ae4242c0dd57a126d17505443b2a9fd926c53f93b60670d93d2d15c36539}{CONTROLS}}
+ \}
+\begin{DoxyCompactList}\small\item\em Enum that represents the different states of the menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{model_8h_a834200084177d31e41dd9b28754a3312}{setup\+\_\+sprites}} ()
+\begin{DoxyCompactList}\small\item\em Function that initializes all sprites. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8h_a206f86a751bda60cf0e3fbcfe53d6d68}{free\+\_\+sprites}} ()
+\begin{DoxyCompactList}\small\item\em Function that frees all sprites. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8h_ae469cdd89d5e954e5b13ccf1985a2b08}{change\+\_\+timer\+\_\+state}} ()
+\begin{DoxyCompactList}\small\item\em Function that, in case of double buffering, copies the buffer to the VRAM and increments a global counter, used to control the time of the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8h_acc2eaed2e5f2ff4d44379e07da2e4964}{change\+\_\+rtc\+\_\+state}} ()
+\begin{DoxyCompactList}\small\item\em Function that changes the state of the RTC, incrementing the global counter, used to control the current date. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8h_ae625d089b75271d06b8040725b287265}{change\+\_\+kb\+\_\+state}} ()
+\begin{DoxyCompactList}\small\item\em Function that changes the state of the keyboard, taking into account the keys pressed. In case of pressing Enter, it initializes the game, always with the same initial conditions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8h_a980ee1f10a62da504ae4f66e1330482b}{change\+\_\+mouse\+\_\+state}} ()
+\begin{DoxyCompactList}\small\item\em Function that changes the state of the mouse. In case of pressing the left button, in game mode, it changes the direction of the player according to the mouse movement and in menu mode, it changes the menu state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8h_a84746849b0adc0623e8f064ae168c8d6}{create\+\_\+player\+\_\+area}} (uint16\+\_\+t width, uint16\+\_\+t height)
+\begin{DoxyCompactList}\small\item\em Function that creates the initial player area, with the dimensions given as arguments. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{model_8h_a2e092124f706e9898a26f3d0c6dd33d3}\index{model.h@{model.h}!A\_KEY@{A\_KEY}}
+\index{A\_KEY@{A\_KEY}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{A\_KEY}{A\_KEY}}
+{\footnotesize\ttfamily \label{model_8h_a2e092124f706e9898a26f3d0c6dd33d3} 
+\#define A\+\_\+\+KEY~30}
+
+\Hypertarget{model_8h_adfb2653969987357f3abaaa3c3bdde54}\index{model.h@{model.h}!C\_KEY@{C\_KEY}}
+\index{C\_KEY@{C\_KEY}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{C\_KEY}{C\_KEY}}
+{\footnotesize\ttfamily \label{model_8h_adfb2653969987357f3abaaa3c3bdde54} 
+\#define C\+\_\+\+KEY~46}
+
+\Hypertarget{model_8h_a23c8dc1c6696b91ba6b96f2dca53b7ba}\index{model.h@{model.h}!D\_KEY@{D\_KEY}}
+\index{D\_KEY@{D\_KEY}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{D\_KEY}{D\_KEY}}
+{\footnotesize\ttfamily \label{model_8h_a23c8dc1c6696b91ba6b96f2dca53b7ba} 
+\#define D\+\_\+\+KEY~32}
+
+\Hypertarget{model_8h_af2292687de6b9256a2664a7dacf9ae4a}\index{model.h@{model.h}!DOWN\_ARROW\_KEY@{DOWN\_ARROW\_KEY}}
+\index{DOWN\_ARROW\_KEY@{DOWN\_ARROW\_KEY}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{DOWN\_ARROW\_KEY}{DOWN\_ARROW\_KEY}}
+{\footnotesize\ttfamily \label{model_8h_af2292687de6b9256a2664a7dacf9ae4a} 
+\#define DOWN\+\_\+\+ARROW\+\_\+\+KEY~0x50}
+
+\Hypertarget{model_8h_afba17fd121bcd7abc852f1ae1f3abb58}\index{model.h@{model.h}!ENTER\_KEY@{ENTER\_KEY}}
+\index{ENTER\_KEY@{ENTER\_KEY}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{ENTER\_KEY}{ENTER\_KEY}}
+{\footnotesize\ttfamily \label{model_8h_afba17fd121bcd7abc852f1ae1f3abb58} 
+\#define ENTER\+\_\+\+KEY~28}
+
+\Hypertarget{model_8h_a2c2fd95e748cf3ec6322b35a89fc53bf}\index{model.h@{model.h}!I\_KEY@{I\_KEY}}
+\index{I\_KEY@{I\_KEY}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{I\_KEY}{I\_KEY}}
+{\footnotesize\ttfamily \label{model_8h_a2c2fd95e748cf3ec6322b35a89fc53bf} 
+\#define I\+\_\+\+KEY~23}
+
+\Hypertarget{model_8h_ac06553a93547334a545098a6ae60ab4f}\index{model.h@{model.h}!J\_KEY@{J\_KEY}}
+\index{J\_KEY@{J\_KEY}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{J\_KEY}{J\_KEY}}
+{\footnotesize\ttfamily \label{model_8h_ac06553a93547334a545098a6ae60ab4f} 
+\#define J\+\_\+\+KEY~36}
+
+\Hypertarget{model_8h_a1d4c75734307f98fc096e756ffac6852}\index{model.h@{model.h}!K\_KEY@{K\_KEY}}
+\index{K\_KEY@{K\_KEY}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{K\_KEY}{K\_KEY}}
+{\footnotesize\ttfamily \label{model_8h_a1d4c75734307f98fc096e756ffac6852} 
+\#define K\+\_\+\+KEY~37}
+
+\Hypertarget{model_8h_a01d053c0e426921f363d45be6c052c39}\index{model.h@{model.h}!L\_KEY@{L\_KEY}}
+\index{L\_KEY@{L\_KEY}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{L\_KEY}{L\_KEY}}
+{\footnotesize\ttfamily \label{model_8h_a01d053c0e426921f363d45be6c052c39} 
+\#define L\+\_\+\+KEY~38}
+
+\Hypertarget{model_8h_aea108a18c2f4dbd3bcfb53d5ec9c3e57}\index{model.h@{model.h}!LEFT\_ARROW\_KEY@{LEFT\_ARROW\_KEY}}
+\index{LEFT\_ARROW\_KEY@{LEFT\_ARROW\_KEY}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{LEFT\_ARROW\_KEY}{LEFT\_ARROW\_KEY}}
+{\footnotesize\ttfamily \label{model_8h_aea108a18c2f4dbd3bcfb53d5ec9c3e57} 
+\#define LEFT\+\_\+\+ARROW\+\_\+\+KEY~0x4B}
+
+\Hypertarget{model_8h_aefb17eeead0329261a24903952388df9}\index{model.h@{model.h}!M\_KEY@{M\_KEY}}
+\index{M\_KEY@{M\_KEY}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{M\_KEY}{M\_KEY}}
+{\footnotesize\ttfamily \label{model_8h_aefb17eeead0329261a24903952388df9} 
+\#define M\+\_\+\+KEY~50}
+
+\Hypertarget{model_8h_a3d8aa05967b559c3e0d0f9f5ce3eacfb}\index{model.h@{model.h}!Q\_KEY@{Q\_KEY}}
+\index{Q\_KEY@{Q\_KEY}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{Q\_KEY}{Q\_KEY}}
+{\footnotesize\ttfamily \label{model_8h_a3d8aa05967b559c3e0d0f9f5ce3eacfb} 
+\#define Q\+\_\+\+KEY~16}
+
+\Hypertarget{model_8h_a75ac3acba95812a4be896446cd3051b4}\index{model.h@{model.h}!R\_KEY@{R\_KEY}}
+\index{R\_KEY@{R\_KEY}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{R\_KEY}{R\_KEY}}
+{\footnotesize\ttfamily \label{model_8h_a75ac3acba95812a4be896446cd3051b4} 
+\#define R\+\_\+\+KEY~19}
+
+\Hypertarget{model_8h_ad0c8af7976bcbad226a5227851560eeb}\index{model.h@{model.h}!RIGHT\_ARROW\_KEY@{RIGHT\_ARROW\_KEY}}
+\index{RIGHT\_ARROW\_KEY@{RIGHT\_ARROW\_KEY}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{RIGHT\_ARROW\_KEY}{RIGHT\_ARROW\_KEY}}
+{\footnotesize\ttfamily \label{model_8h_ad0c8af7976bcbad226a5227851560eeb} 
+\#define RIGHT\+\_\+\+ARROW\+\_\+\+KEY~0x4D}
+
+\Hypertarget{model_8h_a38916d959d471a2781d390910271b6b5}\index{model.h@{model.h}!S\_KEY@{S\_KEY}}
+\index{S\_KEY@{S\_KEY}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{S\_KEY}{S\_KEY}}
+{\footnotesize\ttfamily \label{model_8h_a38916d959d471a2781d390910271b6b5} 
+\#define S\+\_\+\+KEY~31}
+
+\Hypertarget{model_8h_ad411242de334297d01bdadac8f47e90b}\index{model.h@{model.h}!UP\_ARROW\_KEY@{UP\_ARROW\_KEY}}
+\index{UP\_ARROW\_KEY@{UP\_ARROW\_KEY}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{UP\_ARROW\_KEY}{UP\_ARROW\_KEY}}
+{\footnotesize\ttfamily \label{model_8h_ad411242de334297d01bdadac8f47e90b} 
+\#define UP\+\_\+\+ARROW\+\_\+\+KEY~0x48}
+
+\Hypertarget{model_8h_a8cb726577cd35fc0582744b2270e192f}\index{model.h@{model.h}!W\_KEY@{W\_KEY}}
+\index{W\_KEY@{W\_KEY}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{W\_KEY}{W\_KEY}}
+{\footnotesize\ttfamily \label{model_8h_a8cb726577cd35fc0582744b2270e192f} 
+\#define W\+\_\+\+KEY~17}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{model_8h_aa3041ae4242c0dd57a126d17505443b2}\index{model.h@{model.h}!MenuState@{MenuState}}
+\index{MenuState@{MenuState}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{MenuState}{MenuState}}
+{\footnotesize\ttfamily \label{model_8h_aa3041ae4242c0dd57a126d17505443b2} 
+enum \mbox{\hyperlink{model_8h_aa3041ae4242c0dd57a126d17505443b2}{Menu\+State}}}
+
+
+
+Enum that represents the different states of the menu. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MENU@{MENU}!model.h@{model.h}}\index{model.h@{model.h}!MENU@{MENU}}}\Hypertarget{model_8h_aa3041ae4242c0dd57a126d17505443b2a4c40e60bc71a32b924ce1f08d57f9721}\label{model_8h_aa3041ae4242c0dd57a126d17505443b2} 
+MENU&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{END@{END}!model.h@{model.h}}\index{model.h@{model.h}!END@{END}}}\Hypertarget{model_8h_aa3041ae4242c0dd57a126d17505443b2adc6f24fd6915a3f2786a1b7045406924}\label{model_8h_aa3041ae4242c0dd57a126d17505443b2} 
+END&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PLAY@{PLAY}!model.h@{model.h}}\index{model.h@{model.h}!PLAY@{PLAY}}}\Hypertarget{model_8h_aa3041ae4242c0dd57a126d17505443b2a0352906d1ea1dfcd663c918f3a86755b}\label{model_8h_aa3041ae4242c0dd57a126d17505443b2} 
+PLAY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CONTROLS@{CONTROLS}!model.h@{model.h}}\index{model.h@{model.h}!CONTROLS@{CONTROLS}}}\Hypertarget{model_8h_aa3041ae4242c0dd57a126d17505443b2a9fd926c53f93b60670d93d2d15c36539}\label{model_8h_aa3041ae4242c0dd57a126d17505443b2} 
+CONTROLS&\\
+\hline
+
+\end{DoxyEnumFields}
+\Hypertarget{model_8h_aa51313be2faacb739a18fdeecefbac75}\index{model.h@{model.h}!SystemState@{SystemState}}
+\index{SystemState@{SystemState}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{SystemState}{SystemState}}
+{\footnotesize\ttfamily \label{model_8h_aa51313be2faacb739a18fdeecefbac75} 
+enum \mbox{\hyperlink{model_8h_aa51313be2faacb739a18fdeecefbac75}{System\+State}}}
+
+
+
+Enum that represents the different states of the system. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RUN@{RUN}!model.h@{model.h}}\index{model.h@{model.h}!RUN@{RUN}}}\Hypertarget{model_8h_aa51313be2faacb739a18fdeecefbac75a439c688a4e9ed31638d5922a50680a8e}\label{model_8h_aa51313be2faacb739a18fdeecefbac75} 
+RUN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{QUIT@{QUIT}!model.h@{model.h}}\index{model.h@{model.h}!QUIT@{QUIT}}}\Hypertarget{model_8h_aa51313be2faacb739a18fdeecefbac75a76bdc8adfd6c6463ab269ff4c06be9b4}\label{model_8h_aa51313be2faacb739a18fdeecefbac75} 
+QUIT&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{model_8h_ae625d089b75271d06b8040725b287265}\index{model.h@{model.h}!change\_kb\_state@{change\_kb\_state}}
+\index{change\_kb\_state@{change\_kb\_state}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{change\_kb\_state()}{change\_kb\_state()}}
+{\footnotesize\ttfamily \label{model_8h_ae625d089b75271d06b8040725b287265} 
+void change\+\_\+kb\+\_\+state (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function that changes the state of the keyboard, taking into account the keys pressed. In case of pressing Enter, it initializes the game, always with the same initial conditions. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8h_ae625d089b75271d06b8040725b287265_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{model_8h_ae625d089b75271d06b8040725b287265_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{model_8h_a980ee1f10a62da504ae4f66e1330482b}\index{model.h@{model.h}!change\_mouse\_state@{change\_mouse\_state}}
+\index{change\_mouse\_state@{change\_mouse\_state}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{change\_mouse\_state()}{change\_mouse\_state()}}
+{\footnotesize\ttfamily \label{model_8h_a980ee1f10a62da504ae4f66e1330482b} 
+void change\+\_\+mouse\+\_\+state (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function that changes the state of the mouse. In case of pressing the left button, in game mode, it changes the direction of the player according to the mouse movement and in menu mode, it changes the menu state. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8h_a980ee1f10a62da504ae4f66e1330482b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{model_8h_a980ee1f10a62da504ae4f66e1330482b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{model_8h_acc2eaed2e5f2ff4d44379e07da2e4964}\index{model.h@{model.h}!change\_rtc\_state@{change\_rtc\_state}}
+\index{change\_rtc\_state@{change\_rtc\_state}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{change\_rtc\_state()}{change\_rtc\_state()}}
+{\footnotesize\ttfamily \label{model_8h_acc2eaed2e5f2ff4d44379e07da2e4964} 
+void change\+\_\+rtc\+\_\+state (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function that changes the state of the RTC, incrementing the global counter, used to control the current date. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8h_acc2eaed2e5f2ff4d44379e07da2e4964_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{model_8h_acc2eaed2e5f2ff4d44379e07da2e4964_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{model_8h_ae469cdd89d5e954e5b13ccf1985a2b08}\index{model.h@{model.h}!change\_timer\_state@{change\_timer\_state}}
+\index{change\_timer\_state@{change\_timer\_state}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{change\_timer\_state()}{change\_timer\_state()}}
+{\footnotesize\ttfamily \label{model_8h_ae469cdd89d5e954e5b13ccf1985a2b08} 
+void change\+\_\+timer\+\_\+state (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function that, in case of double buffering, copies the buffer to the VRAM and increments a global counter, used to control the time of the game. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{model_8h_ae469cdd89d5e954e5b13ccf1985a2b08_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{model_8h_ae469cdd89d5e954e5b13ccf1985a2b08_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{model_8h_a84746849b0adc0623e8f064ae168c8d6}\index{model.h@{model.h}!create\_player\_area@{create\_player\_area}}
+\index{create\_player\_area@{create\_player\_area}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{create\_player\_area()}{create\_player\_area()}}
+{\footnotesize\ttfamily \label{model_8h_a84746849b0adc0623e8f064ae168c8d6} 
+void create\+\_\+player\+\_\+area (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{width}{, }\item[{uint16\+\_\+t}]{height}{}\end{DoxyParamCaption})}
+
+
+
+Function that creates the initial player area, with the dimensions given as arguments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Width of the player area. \\
+\hline
+{\em height} & Height of the player area. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8h_a84746849b0adc0623e8f064ae168c8d6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{model_8h_a206f86a751bda60cf0e3fbcfe53d6d68}\index{model.h@{model.h}!free\_sprites@{free\_sprites}}
+\index{free\_sprites@{free\_sprites}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{free\_sprites()}{free\_sprites()}}
+{\footnotesize\ttfamily \label{model_8h_a206f86a751bda60cf0e3fbcfe53d6d68} 
+void free\+\_\+sprites (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function that frees all sprites. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{model_8h_a206f86a751bda60cf0e3fbcfe53d6d68_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8h_a206f86a751bda60cf0e3fbcfe53d6d68_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{model_8h_a834200084177d31e41dd9b28754a3312}\index{model.h@{model.h}!setup\_sprites@{setup\_sprites}}
+\index{setup\_sprites@{setup\_sprites}!model.h@{model.h}}
+\doxysubsubsection{\texorpdfstring{setup\_sprites()}{setup\_sprites()}}
+{\footnotesize\ttfamily \label{model_8h_a834200084177d31e41dd9b28754a3312} 
+void setup\+\_\+sprites (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function that initializes all sprites. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{model_8h_a834200084177d31e41dd9b28754a3312_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8h_a834200084177d31e41dd9b28754a3312_icgraph}
+\end{center}
+\end{figure}

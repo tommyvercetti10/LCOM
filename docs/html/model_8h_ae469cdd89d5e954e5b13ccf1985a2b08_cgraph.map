@@ -1,0 +1,7 @@
+<map id="change_timer_state" name="change_timer_state">
+<area shape="rect" id="Node000001" title="Function that, in case of double buffering, copies the buffer to the VRAM and increments a global cou..." alt="" coords="5,31,141,57"/>
+<area shape="rect" id="Node000002" href="$view_8c.html#a8e0a3a878d1f1b35970efdde8b75f7d7" title="Function that syncs the main buffer with the secondary buffer." alt="" coords="189,5,329,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="141,32,173,28,173,33,141,37"/>
+<area shape="rect" id="Node000003" href="$timer_8c.html#a10fc9c867b15c7da6649311c9987cd17" title="Function that increments a global variable that represents the number of timer interruptions." alt="" coords="199,56,319,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="141,51,184,56,183,62,141,56"/>
+</map>

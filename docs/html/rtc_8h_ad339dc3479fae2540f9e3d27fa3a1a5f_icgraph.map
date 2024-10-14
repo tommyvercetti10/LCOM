@@ -1,0 +1,14 @@
+<map id="get_time_in_binary" name="get_time_in_binary">
+<area shape="rect" id="Node000001" title="Function that, first, checks if the RTC is in binary mode and, if so, gets the time in binary...." alt="" coords="610,31,740,57"/>
+<area shape="rect" id="Node000002" href="$rtc_8c.html#ab4e461393be9c7e0d77d8452592906fd" title="Function that updates the date of the RTC." alt="" coords="469,31,562,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="594,47,562,47,562,41,594,41"/>
+<area shape="rect" id="Node000003" href="$model_8c.html#acc2eaed2e5f2ff4d44379e07da2e4964" title="Function that changes the state of the RTC, incrementing the global counter, used to control the curr..." alt="" coords="162,5,283,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="454,41,283,27,284,21,454,36"/>
+<area shape="rect" id="Node000005" href="$rtc_8c.html#a3d05c9737269799a808246188b0451ff" title="Function that initializes the RTC." alt="" coords="331,56,421,83"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="454,58,422,64,421,59,453,53"/>
+<area shape="rect" id="Node000004" href="$proj_8c.html#a7a72220d8366dd84709e79ce415862e5" title="Main loop of the game, that handles all the interrupts and the game logic." alt="" coords="5,31,114,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="147,33,115,38,114,33,146,28"/>
+<area shape="rect" id="Node000006" href="$proj_8c.html#ad5e0d58a89c6c93ee854fc5b99c99256" title="Function that initializes all components of the game." alt="" coords="169,56,276,83"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="316,72,276,72,276,67,316,67"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="153,61,114,55,115,50,154,56"/>
+</map>

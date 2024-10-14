@@ -1,0 +1,186 @@
+\doxysection{C\+:/\+Users/\+Utilizador/\+Desktop/\+MINIX-\/\+LCOM/shared/g2/src/controller/graphics/graphics.h File Reference}
+\hypertarget{graphics_8h}{}\label{graphics_8h}\index{C:/Users/Utilizador/Desktop/MINIX-\/LCOM/shared/g2/src/controller/graphics/graphics.h@{C:/Users/Utilizador/Desktop/MINIX-\/LCOM/shared/g2/src/controller/graphics/graphics.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for graphics.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{graphics_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphics_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{graphics_8h_a430711ee8dd8b9944c9393b6f333f48d}{set\+\_\+graphics\+\_\+mode}} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Function that sets the graphics mode. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{graphics_8h_aa86357e516b83208fb5e6c5786d93880}{set\+\_\+text\+\_\+mode}} ()
+\begin{DoxyCompactList}\small\item\em Function that sets the text mode. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{graphics_8h_a2f32bdfa4852737cd328287a85c7afff}{set\+\_\+frame\+\_\+buffer}} (uint16\+\_\+t mode, uint8\+\_\+t \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}frame\+\_\+buffer)
+\begin{DoxyCompactList}\small\item\em Function that sets the frame buffer according to the submode and the buffer size. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{graphics_8h_a3a336b12ce50ab3c4413144515ac6a93}{draw\+\_\+pixel}} (uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color, uint8\+\_\+t \texorpdfstring{$\ast$}{*}frame\+\_\+buffer)
+\begin{DoxyCompactList}\small\item\em Function that draws a pixel on the screen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{graphics_8h_a09b63a9bc0ec362701e1dcae9d4c5f4e}{draw\+\_\+vline}} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t len, uint32\+\_\+t color, uint8\+\_\+t \texorpdfstring{$\ast$}{*}frame\+\_\+buffer)
+\begin{DoxyCompactList}\small\item\em Function that draws a vertical line on the screen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+vbe\+\_\+mode\+\_\+info\+\_\+t \mbox{\hyperlink{graphics_8h_a9fcc2243068f8e628648febc0909c509}{mode\+\_\+info}}
+\begin{DoxyCompactList}\small\item\em Struct that represents the mode information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{graphics_8h_a3a336b12ce50ab3c4413144515ac6a93}\index{graphics.h@{graphics.h}!draw\_pixel@{draw\_pixel}}
+\index{draw\_pixel@{draw\_pixel}!graphics.h@{graphics.h}}
+\doxysubsubsection{\texorpdfstring{draw\_pixel()}{draw\_pixel()}}
+{\footnotesize\ttfamily \label{graphics_8h_a3a336b12ce50ab3c4413144515ac6a93} 
+int draw\+\_\+pixel (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{, }\item[{uint32\+\_\+t}]{color}{, }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{frame\+\_\+buffer}{}\end{DoxyParamCaption})}
+
+
+
+Function that draws a pixel on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X coordinate of the pixel. \\
+\hline
+{\em y} & Y coordinate of the pixel. \\
+\hline
+{\em color} & Color of the pixel. \\
+\hline
+{\em frame\+\_\+buffer} & Frame buffer to draw the pixel. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the pixel was successfully drawn, 1 otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphics_8h_a3a336b12ce50ab3c4413144515ac6a93_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{graphics_8h_a09b63a9bc0ec362701e1dcae9d4c5f4e}\index{graphics.h@{graphics.h}!draw\_vline@{draw\_vline}}
+\index{draw\_vline@{draw\_vline}!graphics.h@{graphics.h}}
+\doxysubsubsection{\texorpdfstring{draw\_vline()}{draw\_vline()}}
+{\footnotesize\ttfamily \label{graphics_8h_a09b63a9bc0ec362701e1dcae9d4c5f4e} 
+int draw\+\_\+vline (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x}{, }\item[{uint16\+\_\+t}]{y}{, }\item[{uint16\+\_\+t}]{len}{, }\item[{uint32\+\_\+t}]{color}{, }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{frame\+\_\+buffer}{}\end{DoxyParamCaption})}
+
+
+
+Function that draws a vertical line on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Initial X coordinate of the line. \\
+\hline
+{\em y} & Initial Y coordinate of the line. \\
+\hline
+{\em len} & Length of the line. \\
+\hline
+{\em color} & Color of the line. \\
+\hline
+{\em frame\+\_\+buffer} & Frame buffer to draw the line. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the line was successfully drawn, 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{graphics_8h_a09b63a9bc0ec362701e1dcae9d4c5f4e_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{graphics_8h_a2f32bdfa4852737cd328287a85c7afff}\index{graphics.h@{graphics.h}!set\_frame\_buffer@{set\_frame\_buffer}}
+\index{set\_frame\_buffer@{set\_frame\_buffer}!graphics.h@{graphics.h}}
+\doxysubsubsection{\texorpdfstring{set\_frame\_buffer()}{set\_frame\_buffer()}}
+{\footnotesize\ttfamily \label{graphics_8h_a2f32bdfa4852737cd328287a85c7afff} 
+int set\+\_\+frame\+\_\+buffer (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode}{, }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{frame\+\_\+buffer}{}\end{DoxyParamCaption})}
+
+
+
+Function that sets the frame buffer according to the submode and the buffer size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & Submode to use. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the frame buffer was successfully set, 1 otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphics_8h_a2f32bdfa4852737cd328287a85c7afff_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{graphics_8h_a430711ee8dd8b9944c9393b6f333f48d}\index{graphics.h@{graphics.h}!set\_graphics\_mode@{set\_graphics\_mode}}
+\index{set\_graphics\_mode@{set\_graphics\_mode}!graphics.h@{graphics.h}}
+\doxysubsubsection{\texorpdfstring{set\_graphics\_mode()}{set\_graphics\_mode()}}
+{\footnotesize\ttfamily \label{graphics_8h_a430711ee8dd8b9944c9393b6f333f48d} 
+int set\+\_\+graphics\+\_\+mode (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode}{}\end{DoxyParamCaption})}
+
+
+
+Function that sets the graphics mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & Mode to set. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the graphics mode was successfully set, 1 otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphics_8h_a430711ee8dd8b9944c9393b6f333f48d_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{graphics_8h_aa86357e516b83208fb5e6c5786d93880}\index{graphics.h@{graphics.h}!set\_text\_mode@{set\_text\_mode}}
+\index{set\_text\_mode@{set\_text\_mode}!graphics.h@{graphics.h}}
+\doxysubsubsection{\texorpdfstring{set\_text\_mode()}{set\_text\_mode()}}
+{\footnotesize\ttfamily \label{graphics_8h_aa86357e516b83208fb5e6c5786d93880} 
+int set\+\_\+text\+\_\+mode (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function that sets the text mode. 
+
+\begin{DoxyReturn}{Returns}
+0 if the text mode was successfully set, 1 otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{graphics_8h_aa86357e516b83208fb5e6c5786d93880_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{graphics_8h_a9fcc2243068f8e628648febc0909c509}\index{graphics.h@{graphics.h}!mode\_info@{mode\_info}}
+\index{mode\_info@{mode\_info}!graphics.h@{graphics.h}}
+\doxysubsubsection{\texorpdfstring{mode\_info}{mode\_info}}
+{\footnotesize\ttfamily \label{graphics_8h_a9fcc2243068f8e628648febc0909c509} 
+vbe\+\_\+mode\+\_\+info\+\_\+t mode\+\_\+info}
+
+
+
+Struct that represents the mode information. 
+

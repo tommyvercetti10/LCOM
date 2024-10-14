@@ -1,0 +1,129 @@
+\doxysection{C\+:/\+Users/\+Utilizador/\+Desktop/\+MINIX-\/\+LCOM/shared/g2/src/game/game.h File Reference}
+\hypertarget{game_8h}{}\label{game_8h}\index{C:/Users/Utilizador/Desktop/MINIX-\/LCOM/shared/g2/src/game/game.h@{C:/Users/Utilizador/Desktop/MINIX-\/LCOM/shared/g2/src/game/game.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include "{}controller/timer/timer.\+h"{}}\newline
+{\ttfamily \#include "{}model/model.\+h"{}}\newline
+{\ttfamily \#include "{}model/player.\+h"{}}\newline
+Include dependency graph for game.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{game_8h_af3dee46c44890466ca4db3ab89801c99}{move\+\_\+player}} (\mbox{\hyperlink{struct_player_info}{Player\+Info}} \texorpdfstring{$\ast$}{*}player\+\_\+info, enum \mbox{\hyperlink{player_8h_a99f26e6ee9fcd62f75203b5402df8098}{direction}} \texorpdfstring{$\ast$}{*}aux\+\_\+dir)
+\begin{DoxyCompactList}\small\item\em Function that moves the player in the direction of the aux\+\_\+dir. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8h_ad3b75c421401e35365437219c27d53ef}{player\+\_\+collisions}} (\mbox{\hyperlink{struct_player_info}{Player\+Info}} \texorpdfstring{$\ast$}{*}player\+\_\+info)
+\begin{DoxyCompactList}\small\item\em Function that checks if the player is colliding with himself or with the other player, at each time that the player moves. If a player collides with his own trail, he is eliminated; if he collides with an enemy\textquotesingle{}s trail, the enemy is eliminated. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8h_acfbf853ad1adb0dfc9d7bcae60208ef2}{fill\+\_\+territory}} (\mbox{\hyperlink{struct_player_info}{Player\+Info}} \texorpdfstring{$\ast$}{*}player\+\_\+info)
+\begin{DoxyCompactList}\small\item\em Function that fills the territory of the player everytime he gets back to his territory (considering what he achieved when he was away). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8h_a596ff06ed7cdbde047ff32831a005f53}{count\+\_\+territory}} ()
+\begin{DoxyCompactList}\small\item\em Function that counts the territory of each player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{game_8h_a596ff06ed7cdbde047ff32831a005f53}\index{game.h@{game.h}!count\_territory@{count\_territory}}
+\index{count\_territory@{count\_territory}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{count\_territory()}{count\_territory()}}
+{\footnotesize\ttfamily \label{game_8h_a596ff06ed7cdbde047ff32831a005f53} 
+void count\+\_\+territory (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function that counts the territory of each player. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h_a596ff06ed7cdbde047ff32831a005f53_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{game_8h_acfbf853ad1adb0dfc9d7bcae60208ef2}\index{game.h@{game.h}!fill\_territory@{fill\_territory}}
+\index{fill\_territory@{fill\_territory}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{fill\_territory()}{fill\_territory()}}
+{\footnotesize\ttfamily \label{game_8h_acfbf853ad1adb0dfc9d7bcae60208ef2} 
+void fill\+\_\+territory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_player_info}{Player\+Info}} \texorpdfstring{$\ast$}{*}}]{player\+\_\+info}{}\end{DoxyParamCaption})}
+
+
+
+Function that fills the territory of the player everytime he gets back to his territory (considering what he achieved when he was away). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+\_\+info} & Struct with the player information. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h_acfbf853ad1adb0dfc9d7bcae60208ef2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{game_8h_af3dee46c44890466ca4db3ab89801c99}\index{game.h@{game.h}!move\_player@{move\_player}}
+\index{move\_player@{move\_player}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{move\_player()}{move\_player()}}
+{\footnotesize\ttfamily \label{game_8h_af3dee46c44890466ca4db3ab89801c99} 
+void move\+\_\+player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_player_info}{Player\+Info}} \texorpdfstring{$\ast$}{*}}]{player\+\_\+info}{, }\item[{enum \mbox{\hyperlink{player_8h_a99f26e6ee9fcd62f75203b5402df8098}{direction}} \texorpdfstring{$\ast$}{*}}]{aux\+\_\+dir}{}\end{DoxyParamCaption})}
+
+
+
+Function that moves the player in the direction of the aux\+\_\+dir. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+\_\+info} & Struct with the player information. \\
+\hline
+{\em aux\+\_\+dir} & Direction to move the player. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{game_8h_af3dee46c44890466ca4db3ab89801c99_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{game_8h_af3dee46c44890466ca4db3ab89801c99_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{game_8h_ad3b75c421401e35365437219c27d53ef}\index{game.h@{game.h}!player\_collisions@{player\_collisions}}
+\index{player\_collisions@{player\_collisions}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{player\_collisions()}{player\_collisions()}}
+{\footnotesize\ttfamily \label{game_8h_ad3b75c421401e35365437219c27d53ef} 
+void player\+\_\+collisions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_player_info}{Player\+Info}} \texorpdfstring{$\ast$}{*}}]{player\+\_\+info}{}\end{DoxyParamCaption})}
+
+
+
+Function that checks if the player is colliding with himself or with the other player, at each time that the player moves. If a player collides with his own trail, he is eliminated; if he collides with an enemy\textquotesingle{}s trail, the enemy is eliminated. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+\_\+info} & Struct with the player information. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h_ad3b75c421401e35365437219c27d53ef_icgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,10 @@
+<map id="kbc_ih" name="kbc_ih">
+<area shape="rect" id="Node000001" title="Function that reads the current scancode of the keyboard from the KBC." alt="" coords="5,31,65,57"/>
+<area shape="rect" id="Node000002" href="$keyboard_2_k_b_c_8c.html#a52ac1bb096b341741d01d49dd38c0cd4" title="Function that reads the output of the KBC." alt="" coords="113,31,236,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="65,41,97,41,97,47,65,47"/>
+<area shape="rect" id="Node000003" href="$keyboard_2_k_b_c_8c.html#a505885e4583b96e3a35a8d627b71a2f0" title="Function that reads the status of the KBC." alt="" coords="284,5,407,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="236,32,268,27,269,33,237,37"/>
+<area shape="rect" id="Node000004" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title="Function that fetches a 8&#45;bit value instead of a 32&#45;bit value, using sys_inb()." alt="" coords="455,31,546,57"/>
+<area shape="poly" id="edge4_Node000002_Node000004" title=" " alt="" coords="237,41,440,41,440,47,237,47"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="408,26,440,31,439,37,407,31"/>
+</map>

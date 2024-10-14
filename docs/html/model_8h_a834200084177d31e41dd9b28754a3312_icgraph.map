@@ -1,0 +1,7 @@
+<map id="setup_sprites" name="setup_sprites">
+<area shape="rect" id="Node000001" title="Function that initializes all sprites." alt="" coords="317,5,416,32"/>
+<area shape="rect" id="Node000002" href="$proj_8c.html#ad5e0d58a89c6c93ee854fc5b99c99256" title="Function that initializes all components of the game." alt="" coords="162,5,269,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="301,21,270,21,270,16,301,16"/>
+<area shape="rect" id="Node000003" href="$proj_8c.html#a7a72220d8366dd84709e79ce415862e5" title="Main loop of the game, that handles all the interrupts and the game logic." alt="" coords="5,5,114,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="146,21,114,21,114,16,146,16"/>
+</map>

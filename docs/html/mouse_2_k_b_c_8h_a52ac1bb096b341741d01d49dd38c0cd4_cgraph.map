@@ -1,0 +1,8 @@
+<map id="read_KBC_output" name="read_KBC_output">
+<area shape="rect" id="Node000001" title="Function that reads the output of the KBC." alt="" coords="5,31,129,57"/>
+<area shape="rect" id="Node000002" href="$keyboard_2_k_b_c_8c.html#a505885e4583b96e3a35a8d627b71a2f0" title="Function that reads the status of the KBC." alt="" coords="177,5,300,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,32,161,27,162,33,130,37"/>
+<area shape="rect" id="Node000003" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title="Function that fetches a 8&#45;bit value instead of a 32&#45;bit value, using sys_inb()." alt="" coords="348,31,438,57"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="129,41,332,41,332,47,129,47"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="301,26,333,31,332,37,300,31"/>
+</map>

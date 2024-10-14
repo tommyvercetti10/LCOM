@@ -1,0 +1,50 @@
+<map id="util_sys_inb" name="util_sys_inb">
+<area shape="rect" id="Node000001" title="Function that fetches a 8&#45;bit value instead of a 32&#45;bit value, using sys_inb()." alt="" coords="1057,157,1148,184"/>
+<area shape="rect" id="Node000002" href="$rtc_8c.html#a3d02f3eee33b89342c7c96381a59658f" title="Function that reads from the RTC." alt="" coords="906,56,1006,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1074,149,1008,97,988,85,990,81,1011,92,1078,145"/>
+<area shape="rect" id="Node000010" href="$keyboard_2_k_b_c_8c.html#a52ac1bb096b341741d01d49dd38c0cd4" title="Function that reads the output of the KBC." alt="" coords="527,259,650,285"/>
+<area shape="poly" id="edge11_Node000001_Node000010" title=" " alt="" coords="1061,194,1010,215,914,240,815,258,725,268,651,273,651,267,724,262,815,252,913,235,1008,209,1059,189"/>
+<area shape="rect" id="Node000015" href="$keyboard_2_k_b_c_8c.html#a505885e4583b96e3a35a8d627b71a2f0" title="Function that reads the status of the KBC." alt="" coords="721,208,844,235"/>
+<area shape="poly" id="edge18_Node000001_Node000015" title=" " alt="" coords="1042,186,1010,192,845,216,844,211,1009,187,1041,181"/>
+<area shape="rect" id="Node000017" href="$mouse_8c.html#aa4f4b79245304da9acc07cb97e98ee8d" title="Function that writes a command to the mouse." alt="" coords="355,157,467,184"/>
+<area shape="poly" id="edge28_Node000001_Node000017" title=" " alt="" coords="1042,173,468,173,468,168,1042,168"/>
+<area shape="rect" id="Node000019" href="$timer_8c.html#afafc1891c876602d55b894103b1841a7" title="Function that gets the configuration of the timer." alt="" coords="903,107,1009,133"/>
+<area shape="poly" id="edge25_Node000001_Node000019" title=" " alt="" coords="1046,154,996,136,998,131,1048,149"/>
+<area shape="rect" id="Node000003" href="$rtc_8c.html#ad56f47475dc37ed1ff384ec99a39492a" title="Function that checks if the RTC is updating." alt="" coords="710,56,855,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="890,72,855,72,855,67,890,67"/>
+<area shape="rect" id="Node000009" href="$rtc_8c.html#ad339dc3479fae2540f9e3d27fa3a1a5f" title="Function that, first, checks if the RTC is in binary mode and, if so, gets the time in binary...." alt="" coords="717,5,848,32"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="892,54,830,35,831,30,894,48"/>
+<area shape="rect" id="Node000004" href="$rtc_8c.html#ab4e461393be9c7e0d77d8452592906fd" title="Function that updates the date of the RTC." alt="" coords="542,31,635,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="694,61,635,53,636,47,695,55"/>
+<area shape="rect" id="Node000005" href="$model_8c.html#acc2eaed2e5f2ff4d44379e07da2e4964" title="Function that changes the state of the RTC, incrementing the global counter, used to control the curr..." alt="" coords="174,31,295,57"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="527,47,295,47,295,41,527,41"/>
+<area shape="rect" id="Node000007" href="$rtc_8c.html#a3d05c9737269799a808246188b0451ff" title="Function that initializes the RTC." alt="" coords="366,56,456,83"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="527,55,457,66,456,60,527,50"/>
+<area shape="rect" id="Node000006" href="$proj_8c.html#a7a72220d8366dd84709e79ce415862e5" title="Main loop of the game, that handles all the interrupts and the game logic." alt="" coords="5,157,114,184"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="203,69,163,97,81,159,77,155,160,93,199,64"/>
+<area shape="rect" id="Node000008" href="$proj_8c.html#ad5e0d58a89c6c93ee854fc5b99c99256" title="Function that initializes all components of the game." alt="" coords="181,107,288,133"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="352,89,284,109,283,103,350,84"/>
+<area shape="poly" id="edge8_Node000008_Node000006" title=" " alt="" coords="172,141,109,159,107,154,170,136"/>
+<area shape="poly" id="edge10_Node000009_Node000004" title=" " alt="" coords="702,32,635,41,634,35,702,26"/>
+<area shape="rect" id="Node000011" href="$keyboard_8c.html#ab9e6ed7960d60aa4834f2038247d4536" title="Function that reads the current scancode of the keyboard from the KBC." alt="" coords="382,208,441,235"/>
+<area shape="poly" id="edge12_Node000010_Node000011" title=" " alt="" coords="524,256,441,232,442,227,525,251"/>
+<area shape="rect" id="Node000013" href="$mouse_8c.html#a834b6d7efe311484d6da234db333cb97" title="Function that reads the current byte of the mouse from the KBC." alt="" coords="373,259,450,285"/>
+<area shape="poly" id="edge15_Node000010_Node000013" title=" " alt="" coords="511,275,450,275,450,269,511,269"/>
+<area shape="rect" id="Node000012" href="$model_8c.html#ae625d089b75271d06b8040725b287265" title="Function that changes the state of the keyboard, taking into account the keys pressed...." alt="" coords="174,208,295,235"/>
+<area shape="poly" id="edge13_Node000011_Node000012" title=" " alt="" coords="366,224,295,224,295,219,366,219"/>
+<area shape="poly" id="edge14_Node000012_Node000006" title=" " alt="" coords="170,206,107,187,109,182,172,200"/>
+<area shape="rect" id="Node000014" href="$model_8c.html#a980ee1f10a62da504ae4f66e1330482b" title="Function that changes the state of the mouse. In case of pressing the left button,..." alt="" coords="162,259,307,285"/>
+<area shape="poly" id="edge16_Node000013_Node000014" title=" " alt="" coords="357,275,307,275,307,269,357,269"/>
+<area shape="poly" id="edge17_Node000014_Node000006" title=" " alt="" coords="172,255,160,249,112,217,75,187,78,183,115,213,163,244,175,250"/>
+<area shape="poly" id="edge19_Node000015_Node000010" title=" " alt="" coords="715,242,643,261,642,255,713,237"/>
+<area shape="rect" id="Node000016" href="$keyboard_2_k_b_c_8c.html#af493e7c2f3767eac8d5fe67b86efda01" title="Function that writes a command to the KBC." alt="" coords="515,208,662,235"/>
+<area shape="poly" id="edge20_Node000015_Node000016" title=" " alt="" coords="705,224,662,224,662,219,705,219"/>
+<area shape="poly" id="edge21_Node000016_Node000017" title=" " alt="" coords="524,206,460,187,461,182,525,201"/>
+<area shape="poly" id="edge22_Node000017_Node000008" title=" " alt="" coords="347,155,283,136,284,131,348,150"/>
+<area shape="rect" id="Node000018" href="$proj_8c.html#a2901e4ca9772002ad72cd7e02bf1d1ad" title="Function that shuts down all components of the game." alt="" coords="163,157,306,184"/>
+<area shape="poly" id="edge23_Node000017_Node000018" title=" " alt="" coords="340,173,306,173,306,168,340,168"/>
+<area shape="poly" id="edge24_Node000018_Node000006" title=" " alt="" coords="147,173,114,173,114,168,147,168"/>
+<area shape="rect" id="Node000020" href="$timer_8c.html#aca1506be74dfc71c6f90772ca269c619" title="Function that sets the frequency of the timer." alt="" coords="519,107,658,133"/>
+<area shape="poly" id="edge26_Node000019_Node000020" title=" " alt="" coords="888,123,658,123,658,117,888,117"/>
+<area shape="poly" id="edge27_Node000020_Node000008" title=" " alt="" coords="504,123,288,123,288,117,504,117"/>
+</map>

@@ -1,0 +1,199 @@
+\doxysection{C\+:/\+Users/\+Utilizador/\+Desktop/\+MINIX-\/\+LCOM/shared/g2/src/model/player.h File Reference}
+\hypertarget{player_8h}{}\label{player_8h}\index{C:/Users/Utilizador/Desktop/MINIX-\/LCOM/shared/g2/src/model/player.h@{C:/Users/Utilizador/Desktop/MINIX-\/LCOM/shared/g2/src/model/player.h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for player.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{player_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{player_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_position}{Position}}
+\begin{DoxyCompactList}\small\item\em Struct that represents the position of the player. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_player_info}{Player\+Info}}
+\begin{DoxyCompactList}\small\item\em Struct that represents the player and its information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{player_8h_a99f26e6ee9fcd62f75203b5402df8098}{direction}} \{ \newline
+\mbox{\hyperlink{player_8h_a99f26e6ee9fcd62f75203b5402df8098aba595d8bca8bc5e67c37c0a9d89becfa}{UP}}
+, \mbox{\hyperlink{player_8h_a99f26e6ee9fcd62f75203b5402df8098a9b0b4a95b99523966e0e34ffdadac9da}{DOWN}}
+, \mbox{\hyperlink{player_8h_a99f26e6ee9fcd62f75203b5402df8098adb45120aafd37a973140edee24708065}{LEFT}}
+, \mbox{\hyperlink{player_8h_a99f26e6ee9fcd62f75203b5402df8098aec8379af7490bb9eaaf579cf17876f38}{RIGHT}}
+, \newline
+\mbox{\hyperlink{player_8h_a99f26e6ee9fcd62f75203b5402df8098a679ee5320d66c8322e310daeb2ee99b8}{STOP}}
+ \}
+\begin{DoxyCompactList}\small\item\em Struct that represents the direction of the player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{player_8h_a60bb0a91c45278c85ef5e104c9ddba9d}{move\+\_\+player\+\_\+up}} (\mbox{\hyperlink{struct_player_info}{Player\+Info}} \texorpdfstring{$\ast$}{*}player\+Info)
+\begin{DoxyCompactList}\small\item\em Function that moves the player up. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{player_8h_a60972bfda3e935acc02a04253cfad45c}{move\+\_\+player\+\_\+down}} (\mbox{\hyperlink{struct_player_info}{Player\+Info}} \texorpdfstring{$\ast$}{*}player\+Info)
+\begin{DoxyCompactList}\small\item\em Function that moves the player down. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{player_8h_ac9af32c1b0a6fd96d7cbfb64b1511671}{move\+\_\+player\+\_\+left}} (\mbox{\hyperlink{struct_player_info}{Player\+Info}} \texorpdfstring{$\ast$}{*}player\+Info)
+\begin{DoxyCompactList}\small\item\em Function that moves the player left. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{player_8h_a8239e85bab5532dc1c237ee4273b8a94}{move\+\_\+player\+\_\+right}} (\mbox{\hyperlink{struct_player_info}{Player\+Info}} \texorpdfstring{$\ast$}{*}player\+Info)
+\begin{DoxyCompactList}\small\item\em Function that moves the player right. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{player_8h_a99f26e6ee9fcd62f75203b5402df8098}{direction}} \mbox{\hyperlink{player_8h_aa708146af3bac1ad2312f1c4b6ac7f86}{dir}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{player_8h_a99f26e6ee9fcd62f75203b5402df8098}\index{player.h@{player.h}!direction@{direction}}
+\index{direction@{direction}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily \label{player_8h_a99f26e6ee9fcd62f75203b5402df8098} 
+enum \mbox{\hyperlink{player_8h_a99f26e6ee9fcd62f75203b5402df8098}{direction}}}
+
+
+
+Struct that represents the direction of the player. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UP@{UP}!player.h@{player.h}}\index{player.h@{player.h}!UP@{UP}}}\Hypertarget{player_8h_a99f26e6ee9fcd62f75203b5402df8098aba595d8bca8bc5e67c37c0a9d89becfa}\label{player_8h_a99f26e6ee9fcd62f75203b5402df8098} 
+UP&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOWN@{DOWN}!player.h@{player.h}}\index{player.h@{player.h}!DOWN@{DOWN}}}\Hypertarget{player_8h_a99f26e6ee9fcd62f75203b5402df8098a9b0b4a95b99523966e0e34ffdadac9da}\label{player_8h_a99f26e6ee9fcd62f75203b5402df8098} 
+DOWN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LEFT@{LEFT}!player.h@{player.h}}\index{player.h@{player.h}!LEFT@{LEFT}}}\Hypertarget{player_8h_a99f26e6ee9fcd62f75203b5402df8098adb45120aafd37a973140edee24708065}\label{player_8h_a99f26e6ee9fcd62f75203b5402df8098} 
+LEFT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RIGHT@{RIGHT}!player.h@{player.h}}\index{player.h@{player.h}!RIGHT@{RIGHT}}}\Hypertarget{player_8h_a99f26e6ee9fcd62f75203b5402df8098aec8379af7490bb9eaaf579cf17876f38}\label{player_8h_a99f26e6ee9fcd62f75203b5402df8098} 
+RIGHT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STOP@{STOP}!player.h@{player.h}}\index{player.h@{player.h}!STOP@{STOP}}}\Hypertarget{player_8h_a99f26e6ee9fcd62f75203b5402df8098a679ee5320d66c8322e310daeb2ee99b8}\label{player_8h_a99f26e6ee9fcd62f75203b5402df8098} 
+STOP&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{player_8h_a60972bfda3e935acc02a04253cfad45c}\index{player.h@{player.h}!move\_player\_down@{move\_player\_down}}
+\index{move\_player\_down@{move\_player\_down}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{move\_player\_down()}{move\_player\_down()}}
+{\footnotesize\ttfamily \label{player_8h_a60972bfda3e935acc02a04253cfad45c} 
+int move\+\_\+player\+\_\+down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_player_info}{Player\+Info}} \texorpdfstring{$\ast$}{*}}]{player\+Info}{}\end{DoxyParamCaption})}
+
+
+
+Function that moves the player down. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+\_\+info} & Struct with the player information. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the player successfully moved down, 1 otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{player_8h_a60972bfda3e935acc02a04253cfad45c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{player_8h_ac9af32c1b0a6fd96d7cbfb64b1511671}\index{player.h@{player.h}!move\_player\_left@{move\_player\_left}}
+\index{move\_player\_left@{move\_player\_left}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{move\_player\_left()}{move\_player\_left()}}
+{\footnotesize\ttfamily \label{player_8h_ac9af32c1b0a6fd96d7cbfb64b1511671} 
+int move\+\_\+player\+\_\+left (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_player_info}{Player\+Info}} \texorpdfstring{$\ast$}{*}}]{player\+Info}{}\end{DoxyParamCaption})}
+
+
+
+Function that moves the player left. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+\_\+info} & Struct with the player information. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the player successfully moved left, 1 otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{player_8h_ac9af32c1b0a6fd96d7cbfb64b1511671_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{player_8h_a8239e85bab5532dc1c237ee4273b8a94}\index{player.h@{player.h}!move\_player\_right@{move\_player\_right}}
+\index{move\_player\_right@{move\_player\_right}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{move\_player\_right()}{move\_player\_right()}}
+{\footnotesize\ttfamily \label{player_8h_a8239e85bab5532dc1c237ee4273b8a94} 
+int move\+\_\+player\+\_\+right (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_player_info}{Player\+Info}} \texorpdfstring{$\ast$}{*}}]{player\+Info}{}\end{DoxyParamCaption})}
+
+
+
+Function that moves the player right. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+\_\+info} & Struct with the player information. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the player successfully moved right, 1 otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{player_8h_a8239e85bab5532dc1c237ee4273b8a94_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{player_8h_a60bb0a91c45278c85ef5e104c9ddba9d}\index{player.h@{player.h}!move\_player\_up@{move\_player\_up}}
+\index{move\_player\_up@{move\_player\_up}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{move\_player\_up()}{move\_player\_up()}}
+{\footnotesize\ttfamily \label{player_8h_a60bb0a91c45278c85ef5e104c9ddba9d} 
+int move\+\_\+player\+\_\+up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_player_info}{Player\+Info}} \texorpdfstring{$\ast$}{*}}]{player\+Info}{}\end{DoxyParamCaption})}
+
+
+
+Function that moves the player up. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+\_\+info} & Struct with the player information. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the player successfully moved up, 1 otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{player_8h_a60bb0a91c45278c85ef5e104c9ddba9d_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{player_8h_aa708146af3bac1ad2312f1c4b6ac7f86}\index{player.h@{player.h}!dir@{dir}}
+\index{dir@{dir}!player.h@{player.h}}
+\doxysubsubsection{\texorpdfstring{dir}{dir}}
+{\footnotesize\ttfamily \label{player_8h_aa708146af3bac1ad2312f1c4b6ac7f86} 
+enum \mbox{\hyperlink{player_8h_a99f26e6ee9fcd62f75203b5402df8098}{direction}} dir}
+

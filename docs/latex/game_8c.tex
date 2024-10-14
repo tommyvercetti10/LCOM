@@ -1,0 +1,179 @@
+\doxysection{C\+:/\+Users/\+Utilizador/\+Desktop/\+MINIX-\/\+LCOM/shared/g2/src/game/game.c File Reference}
+\hypertarget{game_8c}{}\label{game_8c}\index{C:/Users/Utilizador/Desktop/MINIX-\/LCOM/shared/g2/src/game/game.c@{C:/Users/Utilizador/Desktop/MINIX-\/LCOM/shared/g2/src/game/game.c}}
+{\ttfamily \#include "{}game.\+h"{}}\newline
+Include dependency graph for game.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{game_8c_af3dee46c44890466ca4db3ab89801c99}{move\+\_\+player}} (\mbox{\hyperlink{struct_player_info}{Player\+Info}} \texorpdfstring{$\ast$}{*}player\+\_\+info, enum \mbox{\hyperlink{player_8h_a99f26e6ee9fcd62f75203b5402df8098}{direction}} \texorpdfstring{$\ast$}{*}aux\+\_\+dir)
+\begin{DoxyCompactList}\small\item\em Function that moves the player in the direction of the aux\+\_\+dir. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8c_ad3b75c421401e35365437219c27d53ef}{player\+\_\+collisions}} (\mbox{\hyperlink{struct_player_info}{Player\+Info}} \texorpdfstring{$\ast$}{*}player\+\_\+info)
+\begin{DoxyCompactList}\small\item\em Function that checks if the player is colliding with himself or with the other player, at each time that the player moves. If a player collides with his own trail, he is eliminated; if he collides with an enemy\textquotesingle{}s trail, the enemy is eliminated. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8c_acfbf853ad1adb0dfc9d7bcae60208ef2}{fill\+\_\+territory}} (\mbox{\hyperlink{struct_player_info}{Player\+Info}} \texorpdfstring{$\ast$}{*}player\+\_\+info)
+\begin{DoxyCompactList}\small\item\em Function that fills the territory of the player everytime he gets back to his territory (considering what he achieved when he was away). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8c_a596ff06ed7cdbde047ff32831a005f53}{count\+\_\+territory}} ()
+\begin{DoxyCompactList}\small\item\em Function that counts the territory of each player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{game_8c_a0f08eb193e0aedb134a1481913b6a823}{timer\+\_\+counter}}
+\item 
+\mbox{\hyperlink{model_8h_aa3041ae4242c0dd57a126d17505443b2}{Menu\+State}} \mbox{\hyperlink{game_8c_a92b62ab09159876ce3ca4dc9340931ca}{menu\+State}}
+\item 
+\mbox{\hyperlink{struct_arena}{Arena}} \mbox{\hyperlink{game_8c_a62ee190400a1c0c9cc3f516aa195a70d}{arena\+\_\+matrix}}
+\item 
+\mbox{\hyperlink{struct_player_info}{Player\+Info}} \mbox{\hyperlink{game_8c_a3bf6cee8ebfcf0855e6439ea42464971}{player1\+\_\+info}}
+\item 
+\mbox{\hyperlink{struct_player_info}{Player\+Info}} \mbox{\hyperlink{game_8c_a021963ca09897b52f15d7260024bd80c}{player2\+\_\+info}}
+\item 
+int \mbox{\hyperlink{game_8c_a98639c948232b1d55a7186f01adf5fd4}{p1\+\_\+counter\+\_\+territory}}
+\item 
+int \mbox{\hyperlink{game_8c_a3659d911bd743816ebe64e8bf948c770}{p2\+\_\+counter\+\_\+territory}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{game_8c_a596ff06ed7cdbde047ff32831a005f53}\index{game.c@{game.c}!count\_territory@{count\_territory}}
+\index{count\_territory@{count\_territory}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{count\_territory()}{count\_territory()}}
+{\footnotesize\ttfamily \label{game_8c_a596ff06ed7cdbde047ff32831a005f53} 
+void count\+\_\+territory (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function that counts the territory of each player. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_a596ff06ed7cdbde047ff32831a005f53_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{game_8c_acfbf853ad1adb0dfc9d7bcae60208ef2}\index{game.c@{game.c}!fill\_territory@{fill\_territory}}
+\index{fill\_territory@{fill\_territory}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{fill\_territory()}{fill\_territory()}}
+{\footnotesize\ttfamily \label{game_8c_acfbf853ad1adb0dfc9d7bcae60208ef2} 
+void fill\+\_\+territory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_player_info}{Player\+Info}} \texorpdfstring{$\ast$}{*}}]{player\+\_\+info}{}\end{DoxyParamCaption})}
+
+
+
+Function that fills the territory of the player everytime he gets back to his territory (considering what he achieved when he was away). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+\_\+info} & Struct with the player information. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_acfbf853ad1adb0dfc9d7bcae60208ef2_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{game_8c_af3dee46c44890466ca4db3ab89801c99}\index{game.c@{game.c}!move\_player@{move\_player}}
+\index{move\_player@{move\_player}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{move\_player()}{move\_player()}}
+{\footnotesize\ttfamily \label{game_8c_af3dee46c44890466ca4db3ab89801c99} 
+void move\+\_\+player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_player_info}{Player\+Info}} \texorpdfstring{$\ast$}{*}}]{player\+\_\+info}{, }\item[{enum \mbox{\hyperlink{player_8h_a99f26e6ee9fcd62f75203b5402df8098}{direction}} \texorpdfstring{$\ast$}{*}}]{aux\+\_\+dir}{}\end{DoxyParamCaption})}
+
+
+
+Function that moves the player in the direction of the aux\+\_\+dir. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+\_\+info} & Struct with the player information. \\
+\hline
+{\em aux\+\_\+dir} & Direction to move the player. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{game_8c_af3dee46c44890466ca4db3ab89801c99_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{game_8c_af3dee46c44890466ca4db3ab89801c99_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{game_8c_ad3b75c421401e35365437219c27d53ef}\index{game.c@{game.c}!player\_collisions@{player\_collisions}}
+\index{player\_collisions@{player\_collisions}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{player\_collisions()}{player\_collisions()}}
+{\footnotesize\ttfamily \label{game_8c_ad3b75c421401e35365437219c27d53ef} 
+void player\+\_\+collisions (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_player_info}{Player\+Info}} \texorpdfstring{$\ast$}{*}}]{player\+\_\+info}{}\end{DoxyParamCaption})}
+
+
+
+Function that checks if the player is colliding with himself or with the other player, at each time that the player moves. If a player collides with his own trail, he is eliminated; if he collides with an enemy\textquotesingle{}s trail, the enemy is eliminated. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+\_\+info} & Struct with the player information. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c_ad3b75c421401e35365437219c27d53ef_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{game_8c_a62ee190400a1c0c9cc3f516aa195a70d}\index{game.c@{game.c}!arena\_matrix@{arena\_matrix}}
+\index{arena\_matrix@{arena\_matrix}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{arena\_matrix}{arena\_matrix}}
+{\footnotesize\ttfamily \label{game_8c_a62ee190400a1c0c9cc3f516aa195a70d} 
+\mbox{\hyperlink{struct_arena}{Arena}} arena\+\_\+matrix\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a92b62ab09159876ce3ca4dc9340931ca}\index{game.c@{game.c}!menuState@{menuState}}
+\index{menuState@{menuState}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{menuState}{menuState}}
+{\footnotesize\ttfamily \label{game_8c_a92b62ab09159876ce3ca4dc9340931ca} 
+\mbox{\hyperlink{model_8h_aa3041ae4242c0dd57a126d17505443b2}{Menu\+State}} menu\+State\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a98639c948232b1d55a7186f01adf5fd4}\index{game.c@{game.c}!p1\_counter\_territory@{p1\_counter\_territory}}
+\index{p1\_counter\_territory@{p1\_counter\_territory}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{p1\_counter\_territory}{p1\_counter\_territory}}
+{\footnotesize\ttfamily \label{game_8c_a98639c948232b1d55a7186f01adf5fd4} 
+int p1\+\_\+counter\+\_\+territory}
+
+\Hypertarget{game_8c_a3659d911bd743816ebe64e8bf948c770}\index{game.c@{game.c}!p2\_counter\_territory@{p2\_counter\_territory}}
+\index{p2\_counter\_territory@{p2\_counter\_territory}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{p2\_counter\_territory}{p2\_counter\_territory}}
+{\footnotesize\ttfamily \label{game_8c_a3659d911bd743816ebe64e8bf948c770} 
+int p2\+\_\+counter\+\_\+territory}
+
+\Hypertarget{game_8c_a3bf6cee8ebfcf0855e6439ea42464971}\index{game.c@{game.c}!player1\_info@{player1\_info}}
+\index{player1\_info@{player1\_info}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{player1\_info}{player1\_info}}
+{\footnotesize\ttfamily \label{game_8c_a3bf6cee8ebfcf0855e6439ea42464971} 
+\mbox{\hyperlink{struct_player_info}{Player\+Info}} player1\+\_\+info\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a021963ca09897b52f15d7260024bd80c}\index{game.c@{game.c}!player2\_info@{player2\_info}}
+\index{player2\_info@{player2\_info}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{player2\_info}{player2\_info}}
+{\footnotesize\ttfamily \label{game_8c_a021963ca09897b52f15d7260024bd80c} 
+\mbox{\hyperlink{struct_player_info}{Player\+Info}} player2\+\_\+info\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{game_8c_a0f08eb193e0aedb134a1481913b6a823}\index{game.c@{game.c}!timer\_counter@{timer\_counter}}
+\index{timer\_counter@{timer\_counter}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{timer\_counter}{timer\_counter}}
+{\footnotesize\ttfamily \label{game_8c_a0f08eb193e0aedb134a1481913b6a823} 
+int timer\+\_\+counter\hspace{0.3cm}{\ttfamily [extern]}}
+

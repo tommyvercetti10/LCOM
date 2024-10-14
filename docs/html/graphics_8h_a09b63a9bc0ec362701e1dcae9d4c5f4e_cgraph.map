@@ -1,0 +1,5 @@
+<map id="draw_vline" name="draw_vline">
+<area shape="rect" id="Node000001" title="Function that draws a vertical line on the screen." alt="" coords="5,5,86,32"/>
+<area shape="rect" id="Node000002" href="$graphics_8c.html#a3a336b12ce50ab3c4413144515ac6a93" title="Function that draws a pixel on the screen." alt="" coords="134,5,216,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,16,118,16,118,21,86,21"/>
+</map>

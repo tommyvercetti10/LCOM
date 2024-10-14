@@ -1,0 +1,133 @@
+\doxysection{C\+:/\+Users/\+Utilizador/\+Desktop/\+MINIX-\/\+LCOM/shared/g2/src/controller/mouse/\+KBC.h File Reference}
+\hypertarget{mouse_2_k_b_c_8h}{}\label{mouse_2_k_b_c_8h}\index{C:/Users/Utilizador/Desktop/MINIX-\/LCOM/shared/g2/src/controller/mouse/KBC.h@{C:/Users/Utilizador/Desktop/MINIX-\/LCOM/shared/g2/src/controller/mouse/KBC.h}}
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+{\ttfamily \#include "{}i8042.\+h"{}}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for KBC.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{mouse_2_k_b_c_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_2_k_b_c_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{mouse_2_k_b_c_8h_a505885e4583b96e3a35a8d627b71a2f0}{read\+\_\+\+KBC\+\_\+status}} (uint8\+\_\+t \texorpdfstring{$\ast$}{*}status)
+\begin{DoxyCompactList}\small\item\em Function that reads the status of the KBC. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{mouse_2_k_b_c_8h_a52ac1bb096b341741d01d49dd38c0cd4}{read\+\_\+\+KBC\+\_\+output}} (uint8\+\_\+t port, uint8\+\_\+t \texorpdfstring{$\ast$}{*}output, uint8\+\_\+t \mbox{\hyperlink{model_8c_af03a383fdcfdf7501006a5c8d68be42b}{mouse}})
+\begin{DoxyCompactList}\small\item\em Function that reads the output of the KBC. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{mouse_2_k_b_c_8h_af493e7c2f3767eac8d5fe67b86efda01}{write\+\_\+\+KBC\+\_\+command}} (uint8\+\_\+t port, uint8\+\_\+t command\+Byte)
+\begin{DoxyCompactList}\small\item\em Function that writes a command to the KBC. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{mouse_2_k_b_c_8h_a52ac1bb096b341741d01d49dd38c0cd4}\index{KBC.h@{KBC.h}!read\_KBC\_output@{read\_KBC\_output}}
+\index{read\_KBC\_output@{read\_KBC\_output}!KBC.h@{KBC.h}}
+\doxysubsubsection{\texorpdfstring{read\_KBC\_output()}{read\_KBC\_output()}}
+{\footnotesize\ttfamily \label{mouse_2_k_b_c_8h_a52ac1bb096b341741d01d49dd38c0cd4} 
+int read\+\_\+\+KBC\+\_\+output (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{port}{, }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{output}{, }\item[{uint8\+\_\+t}]{mouse}{}\end{DoxyParamCaption})}
+
+
+
+Function that reads the output of the KBC. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & Port to read the output from. \\
+\hline
+{\em output} & Variable to store the output of the KBC. \\
+\hline
+{\em mouse} & Flag to check if the output is from the mouse. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the output was successfully read, 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_2_k_b_c_8h_a52ac1bb096b341741d01d49dd38c0cd4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_2_k_b_c_8h_a52ac1bb096b341741d01d49dd38c0cd4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{mouse_2_k_b_c_8h_a505885e4583b96e3a35a8d627b71a2f0}\index{KBC.h@{KBC.h}!read\_KBC\_status@{read\_KBC\_status}}
+\index{read\_KBC\_status@{read\_KBC\_status}!KBC.h@{KBC.h}}
+\doxysubsubsection{\texorpdfstring{read\_KBC\_status()}{read\_KBC\_status()}}
+{\footnotesize\ttfamily \label{mouse_2_k_b_c_8h_a505885e4583b96e3a35a8d627b71a2f0} 
+int read\+\_\+\+KBC\+\_\+status (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{status}{}\end{DoxyParamCaption})}
+
+
+
+Function that reads the status of the KBC. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & Variable to store the status of the KBC. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the status was successfully read, 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{mouse_2_k_b_c_8h_a505885e4583b96e3a35a8d627b71a2f0_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_2_k_b_c_8h_a505885e4583b96e3a35a8d627b71a2f0_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{mouse_2_k_b_c_8h_af493e7c2f3767eac8d5fe67b86efda01}\index{KBC.h@{KBC.h}!write\_KBC\_command@{write\_KBC\_command}}
+\index{write\_KBC\_command@{write\_KBC\_command}!KBC.h@{KBC.h}}
+\doxysubsubsection{\texorpdfstring{write\_KBC\_command()}{write\_KBC\_command()}}
+{\footnotesize\ttfamily \label{mouse_2_k_b_c_8h_af493e7c2f3767eac8d5fe67b86efda01} 
+int write\+\_\+\+KBC\+\_\+command (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{port}{, }\item[{uint8\+\_\+t}]{command\+Byte}{}\end{DoxyParamCaption})}
+
+
+
+Function that writes a command to the KBC. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & Port to write the command to. \\
+\hline
+{\em command\+Byte} & Command to write to the KBC. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the command was successfully written, 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_2_k_b_c_8h_af493e7c2f3767eac8d5fe67b86efda01_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{mouse_2_k_b_c_8h_af493e7c2f3767eac8d5fe67b86efda01_icgraph}
+\end{center}
+\end{figure}

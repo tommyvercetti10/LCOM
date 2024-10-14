@@ -1,0 +1,19 @@
+<map id="C:/Users/Utilizador/Desktop/MINIX&#45;LCOM/shared/g2/src/controller/mouse/mouse.c" name="C:/Users/Utilizador/Desktop/MINIX&#45;LCOM/shared/g2/src/controller/mouse/mouse.c">
+<area shape="rect" id="Node000001" title=" " alt="" coords="140,5,302,80"/>
+<area shape="rect" id="Node000002" href="$mouse_8h.html" title=" " alt="" coords="185,128,257,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,80,224,112,218,112,218,80"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="92,293,169,320"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="217,156,147,281,142,278,212,154"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="194,293,299,320"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="226,154,245,278,239,279,220,155"/>
+<area shape="rect" id="Node000005" href="$mouse_2i8042_8h.html" title=" " alt="" coords="323,293,386,320"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="258,152,297,171,315,184,331,201,342,219,349,240,356,278,351,279,344,241,337,222,327,204,312,188,294,175,256,157"/>
+<area shape="rect" id="Node000006" href="$mouse_2_k_b_c_8h.html" title=" " alt="" coords="258,211,317,237"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="233,153,270,197,266,201,229,157"/>
+<area shape="rect" id="Node000007" href="$graphics_8h.html" title=" " alt="" coords="5,203,133,245"/>
+<area shape="poly" id="edge9_Node000002_Node000007" title=" " alt="" coords="198,158,123,197,120,193,196,153"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="264,240,169,288,167,284,262,235"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="284,239,262,281,257,279,279,237"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="300,236,337,280,333,283,296,240"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="87,244,114,279,109,282,83,248"/>
+</map>

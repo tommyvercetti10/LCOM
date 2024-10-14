@@ -1,0 +1,143 @@
+\doxysection{C\+:/\+Users/\+Utilizador/\+Desktop/\+MINIX-\/\+LCOM/shared/g2/src/controller/keyboard/i8042.h File Reference}
+\hypertarget{keyboard_2i8042_8h}{}\label{keyboard_2i8042_8h}\index{C:/Users/Utilizador/Desktop/MINIX-\/LCOM/shared/g2/src/controller/keyboard/i8042.h@{C:/Users/Utilizador/Desktop/MINIX-\/LCOM/shared/g2/src/controller/keyboard/i8042.h}}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_2i8042_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{keyboard_2i8042_8h_a2d17911b50c0aeebb2e3325c5b36d4f2}{KEYBOARD\+\_\+\+IRQ}}~1
+\item 
+\#define \mbox{\hyperlink{keyboard_2i8042_8h_a82218ef5fdf988f42e5056a0da2f9fb5}{BREAK\+\_\+\+ESC}}~0x81
+\item 
+\#define \mbox{\hyperlink{keyboard_2i8042_8h_a35585007cbf075c69fecaa1c1f06e69b}{MAKE\+\_\+\+COKE}}~BIT(7)
+\item 
+\#define \mbox{\hyperlink{keyboard_2i8042_8h_ab427e6926fcc47eb1c02c1f78162b6f6}{TWO\+\_\+\+BYTES}}~0x\+E0
+\item 
+\#define \mbox{\hyperlink{keyboard_2i8042_8h_a62b74068f303c78492667e69fe203914}{ENABLE\+\_\+\+INTERRUPTS}}~BIT(0)
+\item 
+\#define \mbox{\hyperlink{keyboard_2i8042_8h_a81d2ca6759f3f3bf04556b7558aea6bc}{PARITY\+\_\+\+ERROR}}~BIT(7)
+\item 
+\#define \mbox{\hyperlink{keyboard_2i8042_8h_aefc48d416c882f06edaf6d01779d4d74}{TIMEOUT\+\_\+\+ERROR}}~BIT(6)
+\item 
+\#define \mbox{\hyperlink{keyboard_2i8042_8h_a1d2f71b2a0aea9bc1d1300c929a604ef}{OUTPOUT\+\_\+\+BUF\+\_\+\+FULL}}~BIT(0)
+\item 
+\#define \mbox{\hyperlink{keyboard_2i8042_8h_a692e241a14d7f115e2b31fe77a090e19}{INPUT\+\_\+\+BUF\+\_\+\+FULL}}~BIT(1)
+\item 
+\#define \mbox{\hyperlink{keyboard_2i8042_8h_a0b4e336aad52f96e65dd212f76675d8d}{KBC\+\_\+\+STATUS\+\_\+\+REG}}~0x64
+\item 
+\#define \mbox{\hyperlink{keyboard_2i8042_8h_a445f67cfdfb7046efc77f7df5d9835e2}{KBC\+\_\+\+IN\+\_\+\+CMD}}~0x64
+\item 
+\#define \mbox{\hyperlink{keyboard_2i8042_8h_ade9c0b4f31cee479afed8b824fff02a0}{KBC\+\_\+\+OUT\+\_\+\+CMD}}~0x60
+\item 
+\#define \mbox{\hyperlink{keyboard_2i8042_8h_a595a5cad2d3c793963da50865b2c1b47}{KBC\+\_\+\+READ\+\_\+\+CMD}}~0x20
+\item 
+\#define \mbox{\hyperlink{keyboard_2i8042_8h_aaa62a6987753a109d2f7a609ce8b7334}{KBC\+\_\+\+WRITE\+\_\+\+CMD}}~0x60
+\item 
+\#define \mbox{\hyperlink{keyboard_2i8042_8h_aa554763d6a066605edecacdea834da9b}{WAIT\+\_\+\+KBC}}~20000
+\item 
+\#define \mbox{\hyperlink{keyboard_2i8042_8h_a7e1856ac7c6ed757978fc30bb92ace74}{MAX\+\_\+\+ATTEMPTS}}~10
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{keyboard_2i8042_8h_a82218ef5fdf988f42e5056a0da2f9fb5}\index{i8042.h@{i8042.h}!BREAK\_ESC@{BREAK\_ESC}}
+\index{BREAK\_ESC@{BREAK\_ESC}!i8042.h@{i8042.h}}
+\doxysubsubsection{\texorpdfstring{BREAK\_ESC}{BREAK\_ESC}}
+{\footnotesize\ttfamily \label{keyboard_2i8042_8h_a82218ef5fdf988f42e5056a0da2f9fb5} 
+\#define BREAK\+\_\+\+ESC~0x81}
+
+\Hypertarget{keyboard_2i8042_8h_a62b74068f303c78492667e69fe203914}\index{i8042.h@{i8042.h}!ENABLE\_INTERRUPTS@{ENABLE\_INTERRUPTS}}
+\index{ENABLE\_INTERRUPTS@{ENABLE\_INTERRUPTS}!i8042.h@{i8042.h}}
+\doxysubsubsection{\texorpdfstring{ENABLE\_INTERRUPTS}{ENABLE\_INTERRUPTS}}
+{\footnotesize\ttfamily \label{keyboard_2i8042_8h_a62b74068f303c78492667e69fe203914} 
+\#define ENABLE\+\_\+\+INTERRUPTS~BIT(0)}
+
+\Hypertarget{keyboard_2i8042_8h_a692e241a14d7f115e2b31fe77a090e19}\index{i8042.h@{i8042.h}!INPUT\_BUF\_FULL@{INPUT\_BUF\_FULL}}
+\index{INPUT\_BUF\_FULL@{INPUT\_BUF\_FULL}!i8042.h@{i8042.h}}
+\doxysubsubsection{\texorpdfstring{INPUT\_BUF\_FULL}{INPUT\_BUF\_FULL}}
+{\footnotesize\ttfamily \label{keyboard_2i8042_8h_a692e241a14d7f115e2b31fe77a090e19} 
+\#define INPUT\+\_\+\+BUF\+\_\+\+FULL~BIT(1)}
+
+\Hypertarget{keyboard_2i8042_8h_a445f67cfdfb7046efc77f7df5d9835e2}\index{i8042.h@{i8042.h}!KBC\_IN\_CMD@{KBC\_IN\_CMD}}
+\index{KBC\_IN\_CMD@{KBC\_IN\_CMD}!i8042.h@{i8042.h}}
+\doxysubsubsection{\texorpdfstring{KBC\_IN\_CMD}{KBC\_IN\_CMD}}
+{\footnotesize\ttfamily \label{keyboard_2i8042_8h_a445f67cfdfb7046efc77f7df5d9835e2} 
+\#define KBC\+\_\+\+IN\+\_\+\+CMD~0x64}
+
+\Hypertarget{keyboard_2i8042_8h_ade9c0b4f31cee479afed8b824fff02a0}\index{i8042.h@{i8042.h}!KBC\_OUT\_CMD@{KBC\_OUT\_CMD}}
+\index{KBC\_OUT\_CMD@{KBC\_OUT\_CMD}!i8042.h@{i8042.h}}
+\doxysubsubsection{\texorpdfstring{KBC\_OUT\_CMD}{KBC\_OUT\_CMD}}
+{\footnotesize\ttfamily \label{keyboard_2i8042_8h_ade9c0b4f31cee479afed8b824fff02a0} 
+\#define KBC\+\_\+\+OUT\+\_\+\+CMD~0x60}
+
+\Hypertarget{keyboard_2i8042_8h_a595a5cad2d3c793963da50865b2c1b47}\index{i8042.h@{i8042.h}!KBC\_READ\_CMD@{KBC\_READ\_CMD}}
+\index{KBC\_READ\_CMD@{KBC\_READ\_CMD}!i8042.h@{i8042.h}}
+\doxysubsubsection{\texorpdfstring{KBC\_READ\_CMD}{KBC\_READ\_CMD}}
+{\footnotesize\ttfamily \label{keyboard_2i8042_8h_a595a5cad2d3c793963da50865b2c1b47} 
+\#define KBC\+\_\+\+READ\+\_\+\+CMD~0x20}
+
+\Hypertarget{keyboard_2i8042_8h_a0b4e336aad52f96e65dd212f76675d8d}\index{i8042.h@{i8042.h}!KBC\_STATUS\_REG@{KBC\_STATUS\_REG}}
+\index{KBC\_STATUS\_REG@{KBC\_STATUS\_REG}!i8042.h@{i8042.h}}
+\doxysubsubsection{\texorpdfstring{KBC\_STATUS\_REG}{KBC\_STATUS\_REG}}
+{\footnotesize\ttfamily \label{keyboard_2i8042_8h_a0b4e336aad52f96e65dd212f76675d8d} 
+\#define KBC\+\_\+\+STATUS\+\_\+\+REG~0x64}
+
+\Hypertarget{keyboard_2i8042_8h_aaa62a6987753a109d2f7a609ce8b7334}\index{i8042.h@{i8042.h}!KBC\_WRITE\_CMD@{KBC\_WRITE\_CMD}}
+\index{KBC\_WRITE\_CMD@{KBC\_WRITE\_CMD}!i8042.h@{i8042.h}}
+\doxysubsubsection{\texorpdfstring{KBC\_WRITE\_CMD}{KBC\_WRITE\_CMD}}
+{\footnotesize\ttfamily \label{keyboard_2i8042_8h_aaa62a6987753a109d2f7a609ce8b7334} 
+\#define KBC\+\_\+\+WRITE\+\_\+\+CMD~0x60}
+
+\Hypertarget{keyboard_2i8042_8h_a2d17911b50c0aeebb2e3325c5b36d4f2}\index{i8042.h@{i8042.h}!KEYBOARD\_IRQ@{KEYBOARD\_IRQ}}
+\index{KEYBOARD\_IRQ@{KEYBOARD\_IRQ}!i8042.h@{i8042.h}}
+\doxysubsubsection{\texorpdfstring{KEYBOARD\_IRQ}{KEYBOARD\_IRQ}}
+{\footnotesize\ttfamily \label{keyboard_2i8042_8h_a2d17911b50c0aeebb2e3325c5b36d4f2} 
+\#define KEYBOARD\+\_\+\+IRQ~1}
+
+\Hypertarget{keyboard_2i8042_8h_a35585007cbf075c69fecaa1c1f06e69b}\index{i8042.h@{i8042.h}!MAKE\_COKE@{MAKE\_COKE}}
+\index{MAKE\_COKE@{MAKE\_COKE}!i8042.h@{i8042.h}}
+\doxysubsubsection{\texorpdfstring{MAKE\_COKE}{MAKE\_COKE}}
+{\footnotesize\ttfamily \label{keyboard_2i8042_8h_a35585007cbf075c69fecaa1c1f06e69b} 
+\#define MAKE\+\_\+\+COKE~BIT(7)}
+
+\Hypertarget{keyboard_2i8042_8h_a7e1856ac7c6ed757978fc30bb92ace74}\index{i8042.h@{i8042.h}!MAX\_ATTEMPTS@{MAX\_ATTEMPTS}}
+\index{MAX\_ATTEMPTS@{MAX\_ATTEMPTS}!i8042.h@{i8042.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_ATTEMPTS}{MAX\_ATTEMPTS}}
+{\footnotesize\ttfamily \label{keyboard_2i8042_8h_a7e1856ac7c6ed757978fc30bb92ace74} 
+\#define MAX\+\_\+\+ATTEMPTS~10}
+
+\Hypertarget{keyboard_2i8042_8h_a1d2f71b2a0aea9bc1d1300c929a604ef}\index{i8042.h@{i8042.h}!OUTPOUT\_BUF\_FULL@{OUTPOUT\_BUF\_FULL}}
+\index{OUTPOUT\_BUF\_FULL@{OUTPOUT\_BUF\_FULL}!i8042.h@{i8042.h}}
+\doxysubsubsection{\texorpdfstring{OUTPOUT\_BUF\_FULL}{OUTPOUT\_BUF\_FULL}}
+{\footnotesize\ttfamily \label{keyboard_2i8042_8h_a1d2f71b2a0aea9bc1d1300c929a604ef} 
+\#define OUTPOUT\+\_\+\+BUF\+\_\+\+FULL~BIT(0)}
+
+\Hypertarget{keyboard_2i8042_8h_a81d2ca6759f3f3bf04556b7558aea6bc}\index{i8042.h@{i8042.h}!PARITY\_ERROR@{PARITY\_ERROR}}
+\index{PARITY\_ERROR@{PARITY\_ERROR}!i8042.h@{i8042.h}}
+\doxysubsubsection{\texorpdfstring{PARITY\_ERROR}{PARITY\_ERROR}}
+{\footnotesize\ttfamily \label{keyboard_2i8042_8h_a81d2ca6759f3f3bf04556b7558aea6bc} 
+\#define PARITY\+\_\+\+ERROR~BIT(7)}
+
+\Hypertarget{keyboard_2i8042_8h_aefc48d416c882f06edaf6d01779d4d74}\index{i8042.h@{i8042.h}!TIMEOUT\_ERROR@{TIMEOUT\_ERROR}}
+\index{TIMEOUT\_ERROR@{TIMEOUT\_ERROR}!i8042.h@{i8042.h}}
+\doxysubsubsection{\texorpdfstring{TIMEOUT\_ERROR}{TIMEOUT\_ERROR}}
+{\footnotesize\ttfamily \label{keyboard_2i8042_8h_aefc48d416c882f06edaf6d01779d4d74} 
+\#define TIMEOUT\+\_\+\+ERROR~BIT(6)}
+
+\Hypertarget{keyboard_2i8042_8h_ab427e6926fcc47eb1c02c1f78162b6f6}\index{i8042.h@{i8042.h}!TWO\_BYTES@{TWO\_BYTES}}
+\index{TWO\_BYTES@{TWO\_BYTES}!i8042.h@{i8042.h}}
+\doxysubsubsection{\texorpdfstring{TWO\_BYTES}{TWO\_BYTES}}
+{\footnotesize\ttfamily \label{keyboard_2i8042_8h_ab427e6926fcc47eb1c02c1f78162b6f6} 
+\#define TWO\+\_\+\+BYTES~0x\+E0}
+
+\Hypertarget{keyboard_2i8042_8h_aa554763d6a066605edecacdea834da9b}\index{i8042.h@{i8042.h}!WAIT\_KBC@{WAIT\_KBC}}
+\index{WAIT\_KBC@{WAIT\_KBC}!i8042.h@{i8042.h}}
+\doxysubsubsection{\texorpdfstring{WAIT\_KBC}{WAIT\_KBC}}
+{\footnotesize\ttfamily \label{keyboard_2i8042_8h_aa554763d6a066605edecacdea834da9b} 
+\#define WAIT\+\_\+\+KBC~20000}
+

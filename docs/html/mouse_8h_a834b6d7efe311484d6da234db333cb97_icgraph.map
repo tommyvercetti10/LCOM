@@ -1,0 +1,7 @@
+<map id="mouse_ih" name="mouse_ih">
+<area shape="rect" id="Node000001" title="Function that reads the current byte of the mouse from the KBC." alt="" coords="355,5,432,32"/>
+<area shape="rect" id="Node000002" href="$model_8c.html#a980ee1f10a62da504ae4f66e1330482b" title="Function that changes the state of the mouse. In case of pressing the left button,..." alt="" coords="162,5,307,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="339,21,308,21,308,16,339,16"/>
+<area shape="rect" id="Node000003" href="$proj_8c.html#a7a72220d8366dd84709e79ce415862e5" title="Main loop of the game, that handles all the interrupts and the game logic." alt="" coords="5,5,114,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="146,21,114,21,114,16,146,16"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="draw_time" name="draw_time">
+<area shape="rect" id="Node000001" title="Function that draws the current date on the screen." alt="" coords="5,31,86,57"/>
+<area shape="rect" id="Node000002" href="$view_8c.html#a8516cf9221b1daa926c77483a2f59cf6" title="Function that draws the numbers on the screen, according to the current time." alt="" coords="134,5,239,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="86,34,118,28,119,34,87,39"/>
+<area shape="rect" id="Node000003" href="$view_8c.html#a1c3347daa6300db135c4b7ddd9596826" title="Function that draws a sprite on the screen." alt="" coords="287,31,406,57"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="86,41,272,41,272,47,86,47"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="240,24,272,29,271,35,239,30"/>
+<area shape="rect" id="Node000004" href="$graphics_8c.html#a3a336b12ce50ab3c4413144515ac6a93" title="Function that draws a pixel on the screen." alt="" coords="454,31,537,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="407,41,439,41,439,47,407,47"/>
+</map>

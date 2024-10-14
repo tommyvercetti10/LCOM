@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['p1_5fcounter_5fterritory_0',['p1_counter_territory',['../game_8c.html#a98639c948232b1d55a7186f01adf5fd4',1,'p1_counter_territory:&#160;game.c'],['../model_8c.html#a98639c948232b1d55a7186f01adf5fd4',1,'p1_counter_territory:&#160;game.c'],['../view_8c.html#a98639c948232b1d55a7186f01adf5fd4',1,'p1_counter_territory:&#160;game.c']]],
+  ['p1_5fdown_1',['p1_down',['../model_8c.html#a28030c787b25207d6e01db1ec85064e3',1,'model.c']]],
+  ['p1_5fleft_2',['p1_left',['../model_8c.html#a5efa33e97448818e509d5169019dfe14',1,'p1_left:&#160;model.c'],['../view_8c.html#a5efa33e97448818e509d5169019dfe14',1,'p1_left:&#160;model.c']]],
+  ['p1_5fright_3',['p1_right',['../model_8c.html#a5d82a3694750d63936d90870a452afdf',1,'p1_right:&#160;model.c'],['../view_8c.html#a5d82a3694750d63936d90870a452afdf',1,'p1_right:&#160;model.c']]],
+  ['p1_5fup_4',['p1_up',['../model_8c.html#a93df23e94a84a3fee22f0fa11f5c8acc',1,'p1_up:&#160;model.c'],['../view_8c.html#a93df23e94a84a3fee22f0fa11f5c8acc',1,'p1_up:&#160;model.c']]],
+  ['p1win_5',['p1win',['../model_8c.html#aebeecf95f198a2339fe0a42538d2828b',1,'p1win:&#160;model.c'],['../view_8c.html#aebeecf95f198a2339fe0a42538d2828b',1,'p1win:&#160;model.c']]],
+  ['p2_5fcounter_5fterritory_6',['p2_counter_territory',['../game_8c.html#a3659d911bd743816ebe64e8bf948c770',1,'p2_counter_territory:&#160;game.c'],['../model_8c.html#a3659d911bd743816ebe64e8bf948c770',1,'p2_counter_territory:&#160;game.c'],['../view_8c.html#a3659d911bd743816ebe64e8bf948c770',1,'p2_counter_territory:&#160;game.c']]],
+  ['p2_5fdown_7',['p2_down',['../model_8c.html#a65bcbb46fdd9f66560ae315a74d7ffb0',1,'model.c']]],
+  ['p2_5fleft_8',['p2_left',['../model_8c.html#a90fc3e9d213e22ea3ef199306dab006b',1,'p2_left:&#160;model.c'],['../view_8c.html#a90fc3e9d213e22ea3ef199306dab006b',1,'p2_left:&#160;model.c']]],
+  ['p2_5fright_9',['p2_right',['../model_8c.html#a548ca5cfdc37247495a2acb33208527d',1,'p2_right:&#160;model.c'],['../view_8c.html#a548ca5cfdc37247495a2acb33208527d',1,'p2_right:&#160;model.c']]],
+  ['p2_5fup_10',['p2_up',['../model_8c.html#a680060b9027c320c14d49a6ca6c6dfbf',1,'p2_up:&#160;model.c'],['../view_8c.html#a680060b9027c320c14d49a6ca6c6dfbf',1,'p2_up:&#160;model.c']]],
+  ['p2win_11',['p2win',['../model_8c.html#a222e5b97f3d3ce8abc54b2cd16e13f31',1,'p2win:&#160;model.c'],['../view_8c.html#a222e5b97f3d3ce8abc54b2cd16e13f31',1,'p2win:&#160;model.c']]],
+  ['percentage_12',['percentage',['../model_8c.html#ab02129822f171f866b358d080a5964b1',1,'percentage:&#160;model.c'],['../view_8c.html#ab02129822f171f866b358d080a5964b1',1,'percentage:&#160;model.c']]],
+  ['player1_13',['player1',['../model_8c.html#a2b671abef1747815d90695e78d87efdf',1,'player1:&#160;model.c'],['../view_8c.html#a2b671abef1747815d90695e78d87efdf',1,'player1:&#160;model.c']]],
+  ['player1_5finfo_14',['player1_info',['../game_8c.html#a3bf6cee8ebfcf0855e6439ea42464971',1,'player1_info:&#160;player.c'],['../model_8c.html#a3bf6cee8ebfcf0855e6439ea42464971',1,'player1_info:&#160;player.c'],['../player_8c.html#a3bf6cee8ebfcf0855e6439ea42464971',1,'player1_info:&#160;player.c'],['../proj_8c.html#a3bf6cee8ebfcf0855e6439ea42464971',1,'player1_info:&#160;player.c'],['../view_8c.html#a3bf6cee8ebfcf0855e6439ea42464971',1,'player1_info:&#160;player.c']]],
+  ['player2_15',['player2',['../model_8c.html#adb299685d4ece460f5c798bd2a180a69',1,'player2:&#160;model.c'],['../view_8c.html#adb299685d4ece460f5c798bd2a180a69',1,'player2:&#160;model.c']]],
+  ['player2_5finfo_16',['player2_info',['../game_8c.html#a021963ca09897b52f15d7260024bd80c',1,'player2_info:&#160;player.c'],['../model_8c.html#a021963ca09897b52f15d7260024bd80c',1,'player2_info:&#160;player.c'],['../player_8c.html#a021963ca09897b52f15d7260024bd80c',1,'player2_info:&#160;player.c'],['../proj_8c.html#a021963ca09897b52f15d7260024bd80c',1,'player2_info:&#160;player.c'],['../view_8c.html#a021963ca09897b52f15d7260024bd80c',1,'player2_info:&#160;player.c']]],
+  ['pressed_17',['pressed',['../model_8c.html#a132ba96da5ba28448b61e42c019312a9',1,'model.c']]],
+  ['pressed2_18',['pressed2',['../model_8c.html#ad2f53dc1489563248680ba3f8044395c',1,'model.c']]]
+];

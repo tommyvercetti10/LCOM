@@ -1,0 +1,504 @@
+\doxysection{C\+:/\+Users/\+Utilizador/\+Desktop/\+MINIX-\/\+LCOM/shared/g2/src/view/view.h File Reference}
+\hypertarget{view_8h}{}\label{view_8h}\index{C:/Users/Utilizador/Desktop/MINIX-\/LCOM/shared/g2/src/view/view.h@{C:/Users/Utilizador/Desktop/MINIX-\/LCOM/shared/g2/src/view/view.h}}
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include "{}configs.\+h"{}}\newline
+{\ttfamily \#include "{}controller/graphics/graphics.\+h"{}}\newline
+{\ttfamily \#include "{}controller/mouse/mouse.\+h"{}}\newline
+{\ttfamily \#include "{}model/sprite.\+h"{}}\newline
+{\ttfamily \#include "{}model/model.\+h"{}}\newline
+{\ttfamily \#include "{}game/game.\+h"{}}\newline
+{\ttfamily \#include "{}model/player.\+h"{}}\newline
+{\ttfamily \#include "{}controller/rtc/rtc.\+h"{}}\newline
+Include dependency graph for view.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{view_8h_aad71fad632657831b2063742509f06ca}{draw\+\_\+next\+\_\+frame}} ()
+\begin{DoxyCompactList}\small\item\em Function that draws the next frame on the screen, taking into account the current state of the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{view_8h_ac1b06fd7ada12bd9b0e1751e3462b717}{free\+\_\+menu\+\_\+buffer}} ()
+\begin{DoxyCompactList}\small\item\em Function frees the buffer used to draw the initial menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{view_8h_a2e293823f22abda1c98f45d8035282d8}{draw\+\_\+initial\+\_\+menu}} ()
+\begin{DoxyCompactList}\small\item\em Function that draws the initial menu on the screen, which allows the player to choose between starting the game or seeing the controls. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{view_8h_a706e3ba911100ccb91c3269fdb6e3c4e}{free\+\_\+controls\+\_\+menu\+\_\+buffer}} ()
+\begin{DoxyCompactList}\small\item\em Function that frees the buffer used to draw the controls menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{view_8h_ab893d4d9bfe64e67ae91809826d943b3}{draw\+\_\+controls\+\_\+menu}} ()
+\begin{DoxyCompactList}\small\item\em Function that draws the controls menu on the screen, which explains the controls of the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{view_8h_a7e6baca1b635c8aadd95c4d821cda8fc}{draw\+\_\+game}} ()
+\begin{DoxyCompactList}\small\item\em Function that draws the game on the screen, according to the current state of the game, including the players, the arena and the scoreboard. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{view_8h_ae621f77b903bc589198ba904aaf8f838}{draw\+\_\+scoreboard}} ()
+\begin{DoxyCompactList}\small\item\em Function that draws the scoreboard on the screen of the game, according to the current score, game time and territory of each player. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{view_8h_a78550ae224ae0ca51b3de81c44477a45}{draw\+\_\+time}} ()
+\begin{DoxyCompactList}\small\item\em Function that draws the current date on the screen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{view_8h_a8516cf9221b1daa926c77483a2f59cf6}{draw\+\_\+numbers}} (\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}num, int x, int y)
+\begin{DoxyCompactList}\small\item\em Function that draws the numbers on the screen, according to the current time. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{view_8h_acb93a6263ca12e2ed827aa8968d90824}{free\+\_\+end\+\_\+menu\+\_\+buffer}} ()
+\begin{DoxyCompactList}\small\item\em Function that frees the buffer used to draw the end menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{view_8h_a59f2790dea065ab24a3750d93b1a47cd}{draw\+\_\+endmenu\+\_\+score}} (int winner)
+\begin{DoxyCompactList}\small\item\em Function that draws in the end menu the final score of the winner. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{view_8h_aa72c0c9d88ccd3fde2b5893fbe236b83}{draw\+\_\+end\+\_\+menu}} ()
+\begin{DoxyCompactList}\small\item\em Function that draws the end menu on the screen, according to the game winner. If the game ended in a draw, it will return to the initial menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{view_8h_a42f4903ab89aff9e3ee0206c52cf710a}{draw\+\_\+mouse}} ()
+\begin{DoxyCompactList}\small\item\em Function that draws the mouse on the screen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{view_8h_a8f31c752e5a0e9103ca488e57ca746cc}{draw\+\_\+arena}} (\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}sprite)
+\begin{DoxyCompactList}\small\item\em Function that draws the arena on the screen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{view_8h_a1c3347daa6300db135c4b7ddd9596826}{draw\+\_\+sprite\+\_\+xpm}} (\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}sprite, int x, int y, uint8\+\_\+t \texorpdfstring{$\ast$}{*}buffer)
+\begin{DoxyCompactList}\small\item\em Function that draws a sprite on the screen. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{view_8h_a72176afd03ac68214d750fea6dedb3a4}{choose\+\_\+frame\+\_\+buffer}} (uint16\+\_\+t mode)
+\begin{DoxyCompactList}\small\item\em Function that chooses the frame buffer to use, acording to the double buffering variable. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{view_8h_a8e0a3a878d1f1b35970efdde8b75f7d7}{sync\+\_\+to\+\_\+main\+\_\+buffer}} ()
+\begin{DoxyCompactList}\small\item\em Function that syncs the main buffer with the secondary buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{view_8h_a72176afd03ac68214d750fea6dedb3a4}\index{view.h@{view.h}!choose\_frame\_buffer@{choose\_frame\_buffer}}
+\index{choose\_frame\_buffer@{choose\_frame\_buffer}!view.h@{view.h}}
+\doxysubsubsection{\texorpdfstring{choose\_frame\_buffer()}{choose\_frame\_buffer()}}
+{\footnotesize\ttfamily \label{view_8h_a72176afd03ac68214d750fea6dedb3a4} 
+int choose\+\_\+frame\+\_\+buffer (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode}{}\end{DoxyParamCaption})}
+
+
+
+Function that chooses the frame buffer to use, acording to the double buffering variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mode} & Graphics mode to use. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the frame buffer was successfully chosen, 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{view_8h_a72176afd03ac68214d750fea6dedb3a4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8h_a72176afd03ac68214d750fea6dedb3a4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{view_8h_a8f31c752e5a0e9103ca488e57ca746cc}\index{view.h@{view.h}!draw\_arena@{draw\_arena}}
+\index{draw\_arena@{draw\_arena}!view.h@{view.h}}
+\doxysubsubsection{\texorpdfstring{draw\_arena()}{draw\_arena()}}
+{\footnotesize\ttfamily \label{view_8h_a8f31c752e5a0e9103ca488e57ca746cc} 
+int draw\+\_\+arena (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{sprite}{}\end{DoxyParamCaption})}
+
+
+
+Function that draws the arena on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & \doxylink{struct_sprite}{Sprite} to draw. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the arena was successfully drawn, 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{view_8h_a8f31c752e5a0e9103ca488e57ca746cc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8h_a8f31c752e5a0e9103ca488e57ca746cc_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{view_8h_ab893d4d9bfe64e67ae91809826d943b3}\index{view.h@{view.h}!draw\_controls\_menu@{draw\_controls\_menu}}
+\index{draw\_controls\_menu@{draw\_controls\_menu}!view.h@{view.h}}
+\doxysubsubsection{\texorpdfstring{draw\_controls\_menu()}{draw\_controls\_menu()}}
+{\footnotesize\ttfamily \label{view_8h_ab893d4d9bfe64e67ae91809826d943b3} 
+void draw\+\_\+controls\+\_\+menu (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function that draws the controls menu on the screen, which explains the controls of the game. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8h_ab893d4d9bfe64e67ae91809826d943b3_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8h_ab893d4d9bfe64e67ae91809826d943b3_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{view_8h_aa72c0c9d88ccd3fde2b5893fbe236b83}\index{view.h@{view.h}!draw\_end\_menu@{draw\_end\_menu}}
+\index{draw\_end\_menu@{draw\_end\_menu}!view.h@{view.h}}
+\doxysubsubsection{\texorpdfstring{draw\_end\_menu()}{draw\_end\_menu()}}
+{\footnotesize\ttfamily \label{view_8h_aa72c0c9d88ccd3fde2b5893fbe236b83} 
+void draw\+\_\+end\+\_\+menu (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function that draws the end menu on the screen, according to the game winner. If the game ended in a draw, it will return to the initial menu. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8h_aa72c0c9d88ccd3fde2b5893fbe236b83_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8h_aa72c0c9d88ccd3fde2b5893fbe236b83_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{view_8h_a59f2790dea065ab24a3750d93b1a47cd}\index{view.h@{view.h}!draw\_endmenu\_score@{draw\_endmenu\_score}}
+\index{draw\_endmenu\_score@{draw\_endmenu\_score}!view.h@{view.h}}
+\doxysubsubsection{\texorpdfstring{draw\_endmenu\_score()}{draw\_endmenu\_score()}}
+{\footnotesize\ttfamily \label{view_8h_a59f2790dea065ab24a3750d93b1a47cd} 
+void draw\+\_\+endmenu\+\_\+score (\begin{DoxyParamCaption}\item[{int}]{winner}{}\end{DoxyParamCaption})}
+
+
+
+Function that draws in the end menu the final score of the winner. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em winner} & Percentage of the territory of the winner. \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8h_a59f2790dea065ab24a3750d93b1a47cd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8h_a59f2790dea065ab24a3750d93b1a47cd_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{view_8h_a7e6baca1b635c8aadd95c4d821cda8fc}\index{view.h@{view.h}!draw\_game@{draw\_game}}
+\index{draw\_game@{draw\_game}!view.h@{view.h}}
+\doxysubsubsection{\texorpdfstring{draw\_game()}{draw\_game()}}
+{\footnotesize\ttfamily \label{view_8h_a7e6baca1b635c8aadd95c4d821cda8fc} 
+void draw\+\_\+game (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function that draws the game on the screen, according to the current state of the game, including the players, the arena and the scoreboard. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8h_a7e6baca1b635c8aadd95c4d821cda8fc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8h_a7e6baca1b635c8aadd95c4d821cda8fc_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{view_8h_a2e293823f22abda1c98f45d8035282d8}\index{view.h@{view.h}!draw\_initial\_menu@{draw\_initial\_menu}}
+\index{draw\_initial\_menu@{draw\_initial\_menu}!view.h@{view.h}}
+\doxysubsubsection{\texorpdfstring{draw\_initial\_menu()}{draw\_initial\_menu()}}
+{\footnotesize\ttfamily \label{view_8h_a2e293823f22abda1c98f45d8035282d8} 
+void draw\+\_\+initial\+\_\+menu (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function that draws the initial menu on the screen, which allows the player to choose between starting the game or seeing the controls. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8h_a2e293823f22abda1c98f45d8035282d8_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8h_a2e293823f22abda1c98f45d8035282d8_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{view_8h_a42f4903ab89aff9e3ee0206c52cf710a}\index{view.h@{view.h}!draw\_mouse@{draw\_mouse}}
+\index{draw\_mouse@{draw\_mouse}!view.h@{view.h}}
+\doxysubsubsection{\texorpdfstring{draw\_mouse()}{draw\_mouse()}}
+{\footnotesize\ttfamily \label{view_8h_a42f4903ab89aff9e3ee0206c52cf710a} 
+void draw\+\_\+mouse (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function that draws the mouse on the screen. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8h_a42f4903ab89aff9e3ee0206c52cf710a_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8h_a42f4903ab89aff9e3ee0206c52cf710a_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{view_8h_aad71fad632657831b2063742509f06ca}\index{view.h@{view.h}!draw\_next\_frame@{draw\_next\_frame}}
+\index{draw\_next\_frame@{draw\_next\_frame}!view.h@{view.h}}
+\doxysubsubsection{\texorpdfstring{draw\_next\_frame()}{draw\_next\_frame()}}
+{\footnotesize\ttfamily \label{view_8h_aad71fad632657831b2063742509f06ca} 
+void draw\+\_\+next\+\_\+frame (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function that draws the next frame on the screen, taking into account the current state of the game. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8h_aad71fad632657831b2063742509f06ca_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=287pt]{view_8h_aad71fad632657831b2063742509f06ca_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{view_8h_a8516cf9221b1daa926c77483a2f59cf6}\index{view.h@{view.h}!draw\_numbers@{draw\_numbers}}
+\index{draw\_numbers@{draw\_numbers}!view.h@{view.h}}
+\doxysubsubsection{\texorpdfstring{draw\_numbers()}{draw\_numbers()}}
+{\footnotesize\ttfamily \label{view_8h_a8516cf9221b1daa926c77483a2f59cf6} 
+int draw\+\_\+numbers (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{num}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Function that draws the numbers on the screen, according to the current time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & \doxylink{struct_sprite}{Sprite} of the number to draw. \\
+\hline
+{\em x} & X position to draw the number. \\
+\hline
+{\em y} & Y position to draw the number. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the number was successfully drawn, 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8h_a8516cf9221b1daa926c77483a2f59cf6_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8h_a8516cf9221b1daa926c77483a2f59cf6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{view_8h_ae621f77b903bc589198ba904aaf8f838}\index{view.h@{view.h}!draw\_scoreboard@{draw\_scoreboard}}
+\index{draw\_scoreboard@{draw\_scoreboard}!view.h@{view.h}}
+\doxysubsubsection{\texorpdfstring{draw\_scoreboard()}{draw\_scoreboard()}}
+{\footnotesize\ttfamily \label{view_8h_ae621f77b903bc589198ba904aaf8f838} 
+int draw\+\_\+scoreboard (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function that draws the scoreboard on the screen of the game, according to the current score, game time and territory of each player. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8h_ae621f77b903bc589198ba904aaf8f838_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8h_ae621f77b903bc589198ba904aaf8f838_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{view_8h_a1c3347daa6300db135c4b7ddd9596826}\index{view.h@{view.h}!draw\_sprite\_xpm@{draw\_sprite\_xpm}}
+\index{draw\_sprite\_xpm@{draw\_sprite\_xpm}!view.h@{view.h}}
+\doxysubsubsection{\texorpdfstring{draw\_sprite\_xpm()}{draw\_sprite\_xpm()}}
+{\footnotesize\ttfamily \label{view_8h_a1c3347daa6300db135c4b7ddd9596826} 
+int draw\+\_\+sprite\+\_\+xpm (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*}}]{sprite}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{uint8\+\_\+t \texorpdfstring{$\ast$}{*}}]{buffer}{}\end{DoxyParamCaption})}
+
+
+
+Function that draws a sprite on the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sprite} & \doxylink{struct_sprite}{Sprite} to draw. \\
+\hline
+{\em x} & X position to draw the sprite. \\
+\hline
+{\em y} & Y position to draw the sprite. \\
+\hline
+{\em buffer} & Buffer to draw the sprite. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the sprite was successfully drawn, 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=267pt]{view_8h_a1c3347daa6300db135c4b7ddd9596826_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8h_a1c3347daa6300db135c4b7ddd9596826_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{view_8h_a78550ae224ae0ca51b3de81c44477a45}\index{view.h@{view.h}!draw\_time@{draw\_time}}
+\index{draw\_time@{draw\_time}!view.h@{view.h}}
+\doxysubsubsection{\texorpdfstring{draw\_time()}{draw\_time()}}
+{\footnotesize\ttfamily \label{view_8h_a78550ae224ae0ca51b3de81c44477a45} 
+int draw\+\_\+time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function that draws the current date on the screen. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8h_a78550ae224ae0ca51b3de81c44477a45_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8h_a78550ae224ae0ca51b3de81c44477a45_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{view_8h_a706e3ba911100ccb91c3269fdb6e3c4e}\index{view.h@{view.h}!free\_controls\_menu\_buffer@{free\_controls\_menu\_buffer}}
+\index{free\_controls\_menu\_buffer@{free\_controls\_menu\_buffer}!view.h@{view.h}}
+\doxysubsubsection{\texorpdfstring{free\_controls\_menu\_buffer()}{free\_controls\_menu\_buffer()}}
+{\footnotesize\ttfamily \label{view_8h_a706e3ba911100ccb91c3269fdb6e3c4e} 
+void free\+\_\+controls\+\_\+menu\+\_\+buffer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function that frees the buffer used to draw the controls menu. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8h_a706e3ba911100ccb91c3269fdb6e3c4e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{view_8h_acb93a6263ca12e2ed827aa8968d90824}\index{view.h@{view.h}!free\_end\_menu\_buffer@{free\_end\_menu\_buffer}}
+\index{free\_end\_menu\_buffer@{free\_end\_menu\_buffer}!view.h@{view.h}}
+\doxysubsubsection{\texorpdfstring{free\_end\_menu\_buffer()}{free\_end\_menu\_buffer()}}
+{\footnotesize\ttfamily \label{view_8h_acb93a6263ca12e2ed827aa8968d90824} 
+void free\+\_\+end\+\_\+menu\+\_\+buffer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function that frees the buffer used to draw the end menu. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8h_acb93a6263ca12e2ed827aa8968d90824_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{view_8h_ac1b06fd7ada12bd9b0e1751e3462b717}\index{view.h@{view.h}!free\_menu\_buffer@{free\_menu\_buffer}}
+\index{free\_menu\_buffer@{free\_menu\_buffer}!view.h@{view.h}}
+\doxysubsubsection{\texorpdfstring{free\_menu\_buffer()}{free\_menu\_buffer()}}
+{\footnotesize\ttfamily \label{view_8h_ac1b06fd7ada12bd9b0e1751e3462b717} 
+void free\+\_\+menu\+\_\+buffer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function frees the buffer used to draw the initial menu. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8h_ac1b06fd7ada12bd9b0e1751e3462b717_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{view_8h_a8e0a3a878d1f1b35970efdde8b75f7d7}\index{view.h@{view.h}!sync\_to\_main\_buffer@{sync\_to\_main\_buffer}}
+\index{sync\_to\_main\_buffer@{sync\_to\_main\_buffer}!view.h@{view.h}}
+\doxysubsubsection{\texorpdfstring{sync\_to\_main\_buffer()}{sync\_to\_main\_buffer()}}
+{\footnotesize\ttfamily \label{view_8h_a8e0a3a878d1f1b35970efdde8b75f7d7} 
+void sync\+\_\+to\+\_\+main\+\_\+buffer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function that syncs the main buffer with the secondary buffer. 
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{view_8h_a8e0a3a878d1f1b35970efdde8b75f7d7_icgraph}
+\end{center}
+\end{figure}

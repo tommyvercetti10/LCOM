@@ -1,0 +1,619 @@
+\doxysection{C\+:/\+Users/\+Utilizador/\+Desktop/\+MINIX-\/\+LCOM/shared/g2/src/model/model.c File Reference}
+\hypertarget{model_8c}{}\label{model_8c}\index{C:/Users/Utilizador/Desktop/MINIX-\/LCOM/shared/g2/src/model/model.c@{C:/Users/Utilizador/Desktop/MINIX-\/LCOM/shared/g2/src/model/model.c}}
+{\ttfamily \#include "{}model.\+h"{}}\newline
+Include dependency graph for model.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{model_8c_a834200084177d31e41dd9b28754a3312}{setup\+\_\+sprites}} ()
+\begin{DoxyCompactList}\small\item\em Function that initializes all sprites. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8c_a206f86a751bda60cf0e3fbcfe53d6d68}{free\+\_\+sprites}} ()
+\begin{DoxyCompactList}\small\item\em Function that frees all sprites. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8c_ae469cdd89d5e954e5b13ccf1985a2b08}{change\+\_\+timer\+\_\+state}} ()
+\begin{DoxyCompactList}\small\item\em Function that, in case of double buffering, copies the buffer to the VRAM and increments a global counter, used to control the time of the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8c_acc2eaed2e5f2ff4d44379e07da2e4964}{change\+\_\+rtc\+\_\+state}} ()
+\begin{DoxyCompactList}\small\item\em Function that changes the state of the RTC, incrementing the global counter, used to control the current date. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8c_ae625d089b75271d06b8040725b287265}{change\+\_\+kb\+\_\+state}} ()
+\begin{DoxyCompactList}\small\item\em Function that changes the state of the keyboard, taking into account the keys pressed. In case of pressing Enter, it initializes the game, always with the same initial conditions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8c_a980ee1f10a62da504ae4f66e1330482b}{change\+\_\+mouse\+\_\+state}} ()
+\begin{DoxyCompactList}\small\item\em Function that changes the state of the mouse. In case of pressing the left button, in game mode, it changes the direction of the player according to the mouse movement and in menu mode, it changes the menu state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{model_8c_a84746849b0adc0623e8f064ae168c8d6}{create\+\_\+player\+\_\+area}} (uint16\+\_\+t width, uint16\+\_\+t height)
+\begin{DoxyCompactList}\small\item\em Function that creates the initial player area, with the dimensions given as arguments. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{model_8h_aa51313be2faacb739a18fdeecefbac75}{System\+State}} \mbox{\hyperlink{model_8c_ac705089b22877f6322d09a9f0f5bdb1d}{system\+State}} = \mbox{\hyperlink{model_8h_aa51313be2faacb739a18fdeecefbac75a439c688a4e9ed31638d5922a50680a8e}{RUN}}
+\item 
+\mbox{\hyperlink{model_8h_aa3041ae4242c0dd57a126d17505443b2}{Menu\+State}} \mbox{\hyperlink{model_8c_a92b62ab09159876ce3ca4dc9340931ca}{menu\+State}} = \mbox{\hyperlink{model_8h_aa3041ae4242c0dd57a126d17505443b2a4c40e60bc71a32b924ce1f08d57f9721}{MENU}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{model_8c_aa1de7a5557e9d96b83cf03f73c92163f}{scancode}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{model_8c_aac2bc8185dd3bcc5a271019ce243f18c}{current\+Index}}
+\item 
+\mbox{\hyperlink{struct_mouse_info}{Mouse\+Info}} \mbox{\hyperlink{model_8c_a343e4f854a0c3e5001228e209c5f025e}{mouse\+\_\+info}}
+\item 
+vbe\+\_\+mode\+\_\+info\+\_\+t \mbox{\hyperlink{model_8c_a9fcc2243068f8e628648febc0909c509}{mode\+\_\+info}}
+\begin{DoxyCompactList}\small\item\em Struct that represents the mode information. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_player_info}{Player\+Info}} \mbox{\hyperlink{model_8c_a3bf6cee8ebfcf0855e6439ea42464971}{player1\+\_\+info}}
+\item 
+\mbox{\hyperlink{struct_player_info}{Player\+Info}} \mbox{\hyperlink{model_8c_a021963ca09897b52f15d7260024bd80c}{player2\+\_\+info}}
+\item 
+int \mbox{\hyperlink{model_8c_a98639c948232b1d55a7186f01adf5fd4}{p1\+\_\+counter\+\_\+territory}}
+\item 
+int \mbox{\hyperlink{model_8c_a3659d911bd743816ebe64e8bf948c770}{p2\+\_\+counter\+\_\+territory}}
+\item 
+int \mbox{\hyperlink{model_8c_a0f08eb193e0aedb134a1481913b6a823}{timer\+\_\+counter}}
+\item 
+bool \mbox{\hyperlink{model_8c_a923796b48e02f0e0c16dfff48ca1cd84}{two\+\_\+byte}}
+\item 
+enum \mbox{\hyperlink{player_8h_a99f26e6ee9fcd62f75203b5402df8098}{direction}} \mbox{\hyperlink{model_8c_ae76907a57e14f4d1a0dc37082e70373d}{aux\+\_\+dir\+\_\+p1}} = \mbox{\hyperlink{player_8h_a99f26e6ee9fcd62f75203b5402df8098a679ee5320d66c8322e310daeb2ee99b8}{STOP}}
+\item 
+enum \mbox{\hyperlink{player_8h_a99f26e6ee9fcd62f75203b5402df8098}{direction}} \mbox{\hyperlink{model_8c_a76dcba2ba21ceb9c5cc6835ceb2c5d85}{aux\+\_\+dir\+\_\+p2}} = \mbox{\hyperlink{player_8h_a99f26e6ee9fcd62f75203b5402df8098a679ee5320d66c8322e310daeb2ee99b8}{STOP}}
+\item 
+\mbox{\hyperlink{struct_arena}{Arena}} \mbox{\hyperlink{model_8c_a62ee190400a1c0c9cc3f516aa195a70d}{arena\+\_\+matrix}}
+\item 
+int \mbox{\hyperlink{model_8c_a54d604d47c6a588a47639f1a816933ec}{game\+\_\+counter}}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{model_8c_a30c58ab2844681f2c578ff0acf2d5bb7}{old\+\_\+y\+\_\+mouse}} = 300
+\item 
+uint16\+\_\+t \mbox{\hyperlink{model_8c_a428b3a0a443123f22a58bdee33750ac1}{old\+\_\+x\+\_\+mouse}} = 400
+\item 
+uint8\+\_\+t \mbox{\hyperlink{model_8c_a046d3debacbc24b9a46d6d54a240b497}{aux\+\_\+scancode}}
+\item 
+bool \mbox{\hyperlink{model_8c_a132ba96da5ba28448b61e42c019312a9}{pressed}} = false
+\item 
+bool \mbox{\hyperlink{model_8c_ad2f53dc1489563248680ba3f8044395c}{pressed2}} = false
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{model_8c_af03a383fdcfdf7501006a5c8d68be42b}{mouse}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{model_8c_a622d1ce7f2fbc1cb6cad9b145adfbea8}{menu}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{model_8c_a2b671abef1747815d90695e78d87efdf}{player1}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{model_8c_adb299685d4ece460f5c798bd2a180a69}{player2}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{model_8c_a93df23e94a84a3fee22f0fa11f5c8acc}{p1\+\_\+up}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{model_8c_a28030c787b25207d6e01db1ec85064e3}{p1\+\_\+down}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{model_8c_a5efa33e97448818e509d5169019dfe14}{p1\+\_\+left}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{model_8c_a5d82a3694750d63936d90870a452afdf}{p1\+\_\+right}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{model_8c_a680060b9027c320c14d49a6ca6c6dfbf}{p2\+\_\+up}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{model_8c_a65bcbb46fdd9f66560ae315a74d7ffb0}{p2\+\_\+down}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{model_8c_a90fc3e9d213e22ea3ef199306dab006b}{p2\+\_\+left}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{model_8c_a548ca5cfdc37247495a2acb33208527d}{p2\+\_\+right}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{model_8c_a2bb0875421f0569d9c8494b6ef6abbe1}{arena}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{model_8c_a6944041c33f49e5d75efcf45d1bc0036}{num0}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{model_8c_a05f1115e6d8fca9c36f47dbc7f867b05}{num1}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{model_8c_ab5c937a371e134546d6ceba373360521}{num2}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{model_8c_a4cddac96585d577d6fdc94c0a8efc9d5}{num3}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{model_8c_ade461313c095b7a9555ba779ee5ff30a}{num4}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{model_8c_a2f93ec7a8da04113eba97f9b62cadc8d}{num5}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{model_8c_a4f8c00a46855ba1deb9bd5cff4f897dc}{num6}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{model_8c_ab83b65e46a978ff31d1ba353263b3c06}{num7}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{model_8c_a14665bac7aa3a071c671d5430935cc06}{num8}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{model_8c_a16f518c43ee65051eb4742d3239735a3}{num9}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{model_8c_ab02129822f171f866b358d080a5964b1}{percentage}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{model_8c_ad8555e76b59376c4a4f1ae100513ccc3}{twopoints}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{model_8c_ada06157bb3020e76c7718dc5efe431e6}{bar}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{model_8c_aebeecf95f198a2339fe0a42538d2828b}{p1win}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{model_8c_a222e5b97f3d3ce8abc54b2cd16e13f31}{p2win}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{model_8c_aa0a2f24815fc8db2afef45aa5bb8ba51}{controls}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{model_8c_a918205e03af24831682761500b1493e1}{num\+Sprites}} \mbox{[}10\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{model_8c_ae625d089b75271d06b8040725b287265}\index{model.c@{model.c}!change\_kb\_state@{change\_kb\_state}}
+\index{change\_kb\_state@{change\_kb\_state}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{change\_kb\_state()}{change\_kb\_state()}}
+{\footnotesize\ttfamily \label{model_8c_ae625d089b75271d06b8040725b287265} 
+void change\+\_\+kb\+\_\+state (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function that changes the state of the keyboard, taking into account the keys pressed. In case of pressing Enter, it initializes the game, always with the same initial conditions. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_ae625d089b75271d06b8040725b287265_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{model_8c_ae625d089b75271d06b8040725b287265_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{model_8c_a980ee1f10a62da504ae4f66e1330482b}\index{model.c@{model.c}!change\_mouse\_state@{change\_mouse\_state}}
+\index{change\_mouse\_state@{change\_mouse\_state}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{change\_mouse\_state()}{change\_mouse\_state()}}
+{\footnotesize\ttfamily \label{model_8c_a980ee1f10a62da504ae4f66e1330482b} 
+void change\+\_\+mouse\+\_\+state (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function that changes the state of the mouse. In case of pressing the left button, in game mode, it changes the direction of the player according to the mouse movement and in menu mode, it changes the menu state. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_a980ee1f10a62da504ae4f66e1330482b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{model_8c_a980ee1f10a62da504ae4f66e1330482b_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{model_8c_acc2eaed2e5f2ff4d44379e07da2e4964}\index{model.c@{model.c}!change\_rtc\_state@{change\_rtc\_state}}
+\index{change\_rtc\_state@{change\_rtc\_state}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{change\_rtc\_state()}{change\_rtc\_state()}}
+{\footnotesize\ttfamily \label{model_8c_acc2eaed2e5f2ff4d44379e07da2e4964} 
+void change\+\_\+rtc\+\_\+state (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function that changes the state of the RTC, incrementing the global counter, used to control the current date. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_acc2eaed2e5f2ff4d44379e07da2e4964_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{model_8c_acc2eaed2e5f2ff4d44379e07da2e4964_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{model_8c_ae469cdd89d5e954e5b13ccf1985a2b08}\index{model.c@{model.c}!change\_timer\_state@{change\_timer\_state}}
+\index{change\_timer\_state@{change\_timer\_state}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{change\_timer\_state()}{change\_timer\_state()}}
+{\footnotesize\ttfamily \label{model_8c_ae469cdd89d5e954e5b13ccf1985a2b08} 
+void change\+\_\+timer\+\_\+state (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function that, in case of double buffering, copies the buffer to the VRAM and increments a global counter, used to control the time of the game. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=323pt]{model_8c_ae469cdd89d5e954e5b13ccf1985a2b08_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{model_8c_ae469cdd89d5e954e5b13ccf1985a2b08_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{model_8c_a84746849b0adc0623e8f064ae168c8d6}\index{model.c@{model.c}!create\_player\_area@{create\_player\_area}}
+\index{create\_player\_area@{create\_player\_area}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{create\_player\_area()}{create\_player\_area()}}
+{\footnotesize\ttfamily \label{model_8c_a84746849b0adc0623e8f064ae168c8d6} 
+void create\+\_\+player\+\_\+area (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{width}{, }\item[{uint16\+\_\+t}]{height}{}\end{DoxyParamCaption})}
+
+
+
+Function that creates the initial player area, with the dimensions given as arguments. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em width} & Width of the player area. \\
+\hline
+{\em height} & Height of the player area. \\
+\hline
+\end{DoxyParams}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_a84746849b0adc0623e8f064ae168c8d6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{model_8c_a206f86a751bda60cf0e3fbcfe53d6d68}\index{model.c@{model.c}!free\_sprites@{free\_sprites}}
+\index{free\_sprites@{free\_sprites}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{free\_sprites()}{free\_sprites()}}
+{\footnotesize\ttfamily \label{model_8c_a206f86a751bda60cf0e3fbcfe53d6d68} 
+void free\+\_\+sprites (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function that frees all sprites. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{model_8c_a206f86a751bda60cf0e3fbcfe53d6d68_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_a206f86a751bda60cf0e3fbcfe53d6d68_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{model_8c_a834200084177d31e41dd9b28754a3312}\index{model.c@{model.c}!setup\_sprites@{setup\_sprites}}
+\index{setup\_sprites@{setup\_sprites}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{setup\_sprites()}{setup\_sprites()}}
+{\footnotesize\ttfamily \label{model_8c_a834200084177d31e41dd9b28754a3312} 
+void setup\+\_\+sprites (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function that initializes all sprites. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{model_8c_a834200084177d31e41dd9b28754a3312_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{model_8c_a834200084177d31e41dd9b28754a3312_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{model_8c_a2bb0875421f0569d9c8494b6ef6abbe1}\index{model.c@{model.c}!arena@{arena}}
+\index{arena@{arena}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{arena}{arena}}
+{\footnotesize\ttfamily \label{model_8c_a2bb0875421f0569d9c8494b6ef6abbe1} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} arena}
+
+\Hypertarget{model_8c_a62ee190400a1c0c9cc3f516aa195a70d}\index{model.c@{model.c}!arena\_matrix@{arena\_matrix}}
+\index{arena\_matrix@{arena\_matrix}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{arena\_matrix}{arena\_matrix}}
+{\footnotesize\ttfamily \label{model_8c_a62ee190400a1c0c9cc3f516aa195a70d} 
+\mbox{\hyperlink{struct_arena}{Arena}} arena\+\_\+matrix}
+
+\Hypertarget{model_8c_ae76907a57e14f4d1a0dc37082e70373d}\index{model.c@{model.c}!aux\_dir\_p1@{aux\_dir\_p1}}
+\index{aux\_dir\_p1@{aux\_dir\_p1}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{aux\_dir\_p1}{aux\_dir\_p1}}
+{\footnotesize\ttfamily \label{model_8c_ae76907a57e14f4d1a0dc37082e70373d} 
+enum \mbox{\hyperlink{player_8h_a99f26e6ee9fcd62f75203b5402df8098}{direction}} aux\+\_\+dir\+\_\+p1 = \mbox{\hyperlink{player_8h_a99f26e6ee9fcd62f75203b5402df8098a679ee5320d66c8322e310daeb2ee99b8}{STOP}}}
+
+\Hypertarget{model_8c_a76dcba2ba21ceb9c5cc6835ceb2c5d85}\index{model.c@{model.c}!aux\_dir\_p2@{aux\_dir\_p2}}
+\index{aux\_dir\_p2@{aux\_dir\_p2}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{aux\_dir\_p2}{aux\_dir\_p2}}
+{\footnotesize\ttfamily \label{model_8c_a76dcba2ba21ceb9c5cc6835ceb2c5d85} 
+enum \mbox{\hyperlink{player_8h_a99f26e6ee9fcd62f75203b5402df8098}{direction}} aux\+\_\+dir\+\_\+p2 = \mbox{\hyperlink{player_8h_a99f26e6ee9fcd62f75203b5402df8098a679ee5320d66c8322e310daeb2ee99b8}{STOP}}}
+
+\Hypertarget{model_8c_a046d3debacbc24b9a46d6d54a240b497}\index{model.c@{model.c}!aux\_scancode@{aux\_scancode}}
+\index{aux\_scancode@{aux\_scancode}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{aux\_scancode}{aux\_scancode}}
+{\footnotesize\ttfamily \label{model_8c_a046d3debacbc24b9a46d6d54a240b497} 
+uint8\+\_\+t aux\+\_\+scancode}
+
+\Hypertarget{model_8c_ada06157bb3020e76c7718dc5efe431e6}\index{model.c@{model.c}!bar@{bar}}
+\index{bar@{bar}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{bar}{bar}}
+{\footnotesize\ttfamily \label{model_8c_ada06157bb3020e76c7718dc5efe431e6} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} bar}
+
+\Hypertarget{model_8c_aa0a2f24815fc8db2afef45aa5bb8ba51}\index{model.c@{model.c}!controls@{controls}}
+\index{controls@{controls}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{controls}{controls}}
+{\footnotesize\ttfamily \label{model_8c_aa0a2f24815fc8db2afef45aa5bb8ba51} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} controls}
+
+\Hypertarget{model_8c_aac2bc8185dd3bcc5a271019ce243f18c}\index{model.c@{model.c}!currentIndex@{currentIndex}}
+\index{currentIndex@{currentIndex}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{currentIndex}{currentIndex}}
+{\footnotesize\ttfamily \label{model_8c_aac2bc8185dd3bcc5a271019ce243f18c} 
+uint8\+\_\+t current\+Index\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{model_8c_a54d604d47c6a588a47639f1a816933ec}\index{model.c@{model.c}!game\_counter@{game\_counter}}
+\index{game\_counter@{game\_counter}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{game\_counter}{game\_counter}}
+{\footnotesize\ttfamily \label{model_8c_a54d604d47c6a588a47639f1a816933ec} 
+int game\+\_\+counter}
+
+\Hypertarget{model_8c_a622d1ce7f2fbc1cb6cad9b145adfbea8}\index{model.c@{model.c}!menu@{menu}}
+\index{menu@{menu}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{menu}{menu}}
+{\footnotesize\ttfamily \label{model_8c_a622d1ce7f2fbc1cb6cad9b145adfbea8} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} menu}
+
+\Hypertarget{model_8c_a92b62ab09159876ce3ca4dc9340931ca}\index{model.c@{model.c}!menuState@{menuState}}
+\index{menuState@{menuState}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{menuState}{menuState}}
+{\footnotesize\ttfamily \label{model_8c_a92b62ab09159876ce3ca4dc9340931ca} 
+\mbox{\hyperlink{model_8h_aa3041ae4242c0dd57a126d17505443b2}{Menu\+State}} menu\+State = \mbox{\hyperlink{model_8h_aa3041ae4242c0dd57a126d17505443b2a4c40e60bc71a32b924ce1f08d57f9721}{MENU}}}
+
+\Hypertarget{model_8c_a9fcc2243068f8e628648febc0909c509}\index{model.c@{model.c}!mode\_info@{mode\_info}}
+\index{mode\_info@{mode\_info}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{mode\_info}{mode\_info}}
+{\footnotesize\ttfamily \label{model_8c_a9fcc2243068f8e628648febc0909c509} 
+vbe\+\_\+mode\+\_\+info\+\_\+t mode\+\_\+info\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Struct that represents the mode information. 
+
+\Hypertarget{model_8c_af03a383fdcfdf7501006a5c8d68be42b}\index{model.c@{model.c}!mouse@{mouse}}
+\index{mouse@{mouse}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{mouse}{mouse}}
+{\footnotesize\ttfamily \label{model_8c_af03a383fdcfdf7501006a5c8d68be42b} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} mouse}
+
+\Hypertarget{model_8c_a343e4f854a0c3e5001228e209c5f025e}\index{model.c@{model.c}!mouse\_info@{mouse\_info}}
+\index{mouse\_info@{mouse\_info}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_info}{mouse\_info}}
+{\footnotesize\ttfamily \label{model_8c_a343e4f854a0c3e5001228e209c5f025e} 
+\mbox{\hyperlink{struct_mouse_info}{Mouse\+Info}} mouse\+\_\+info\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{model_8c_a6944041c33f49e5d75efcf45d1bc0036}\index{model.c@{model.c}!num0@{num0}}
+\index{num0@{num0}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{num0}{num0}}
+{\footnotesize\ttfamily \label{model_8c_a6944041c33f49e5d75efcf45d1bc0036} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} num0}
+
+\Hypertarget{model_8c_a05f1115e6d8fca9c36f47dbc7f867b05}\index{model.c@{model.c}!num1@{num1}}
+\index{num1@{num1}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{num1}{num1}}
+{\footnotesize\ttfamily \label{model_8c_a05f1115e6d8fca9c36f47dbc7f867b05} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} num1}
+
+\Hypertarget{model_8c_ab5c937a371e134546d6ceba373360521}\index{model.c@{model.c}!num2@{num2}}
+\index{num2@{num2}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{num2}{num2}}
+{\footnotesize\ttfamily \label{model_8c_ab5c937a371e134546d6ceba373360521} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} num2}
+
+\Hypertarget{model_8c_a4cddac96585d577d6fdc94c0a8efc9d5}\index{model.c@{model.c}!num3@{num3}}
+\index{num3@{num3}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{num3}{num3}}
+{\footnotesize\ttfamily \label{model_8c_a4cddac96585d577d6fdc94c0a8efc9d5} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} num3}
+
+\Hypertarget{model_8c_ade461313c095b7a9555ba779ee5ff30a}\index{model.c@{model.c}!num4@{num4}}
+\index{num4@{num4}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{num4}{num4}}
+{\footnotesize\ttfamily \label{model_8c_ade461313c095b7a9555ba779ee5ff30a} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} num4}
+
+\Hypertarget{model_8c_a2f93ec7a8da04113eba97f9b62cadc8d}\index{model.c@{model.c}!num5@{num5}}
+\index{num5@{num5}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{num5}{num5}}
+{\footnotesize\ttfamily \label{model_8c_a2f93ec7a8da04113eba97f9b62cadc8d} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} num5}
+
+\Hypertarget{model_8c_a4f8c00a46855ba1deb9bd5cff4f897dc}\index{model.c@{model.c}!num6@{num6}}
+\index{num6@{num6}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{num6}{num6}}
+{\footnotesize\ttfamily \label{model_8c_a4f8c00a46855ba1deb9bd5cff4f897dc} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} num6}
+
+\Hypertarget{model_8c_ab83b65e46a978ff31d1ba353263b3c06}\index{model.c@{model.c}!num7@{num7}}
+\index{num7@{num7}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{num7}{num7}}
+{\footnotesize\ttfamily \label{model_8c_ab83b65e46a978ff31d1ba353263b3c06} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} num7}
+
+\Hypertarget{model_8c_a14665bac7aa3a071c671d5430935cc06}\index{model.c@{model.c}!num8@{num8}}
+\index{num8@{num8}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{num8}{num8}}
+{\footnotesize\ttfamily \label{model_8c_a14665bac7aa3a071c671d5430935cc06} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} num8}
+
+\Hypertarget{model_8c_a16f518c43ee65051eb4742d3239735a3}\index{model.c@{model.c}!num9@{num9}}
+\index{num9@{num9}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{num9}{num9}}
+{\footnotesize\ttfamily \label{model_8c_a16f518c43ee65051eb4742d3239735a3} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} num9}
+
+\Hypertarget{model_8c_a918205e03af24831682761500b1493e1}\index{model.c@{model.c}!numSprites@{numSprites}}
+\index{numSprites@{numSprites}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{numSprites}{numSprites}}
+{\footnotesize\ttfamily \label{model_8c_a918205e03af24831682761500b1493e1} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} num\+Sprites\mbox{[}10\mbox{]}}
+
+\Hypertarget{model_8c_a428b3a0a443123f22a58bdee33750ac1}\index{model.c@{model.c}!old\_x\_mouse@{old\_x\_mouse}}
+\index{old\_x\_mouse@{old\_x\_mouse}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{old\_x\_mouse}{old\_x\_mouse}}
+{\footnotesize\ttfamily \label{model_8c_a428b3a0a443123f22a58bdee33750ac1} 
+uint16\+\_\+t old\+\_\+x\+\_\+mouse = 400}
+
+\Hypertarget{model_8c_a30c58ab2844681f2c578ff0acf2d5bb7}\index{model.c@{model.c}!old\_y\_mouse@{old\_y\_mouse}}
+\index{old\_y\_mouse@{old\_y\_mouse}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{old\_y\_mouse}{old\_y\_mouse}}
+{\footnotesize\ttfamily \label{model_8c_a30c58ab2844681f2c578ff0acf2d5bb7} 
+uint16\+\_\+t old\+\_\+y\+\_\+mouse = 300}
+
+\Hypertarget{model_8c_a98639c948232b1d55a7186f01adf5fd4}\index{model.c@{model.c}!p1\_counter\_territory@{p1\_counter\_territory}}
+\index{p1\_counter\_territory@{p1\_counter\_territory}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{p1\_counter\_territory}{p1\_counter\_territory}}
+{\footnotesize\ttfamily \label{model_8c_a98639c948232b1d55a7186f01adf5fd4} 
+int p1\+\_\+counter\+\_\+territory\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{model_8c_a28030c787b25207d6e01db1ec85064e3}\index{model.c@{model.c}!p1\_down@{p1\_down}}
+\index{p1\_down@{p1\_down}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{p1\_down}{p1\_down}}
+{\footnotesize\ttfamily \label{model_8c_a28030c787b25207d6e01db1ec85064e3} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} p1\+\_\+down}
+
+\Hypertarget{model_8c_a5efa33e97448818e509d5169019dfe14}\index{model.c@{model.c}!p1\_left@{p1\_left}}
+\index{p1\_left@{p1\_left}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{p1\_left}{p1\_left}}
+{\footnotesize\ttfamily \label{model_8c_a5efa33e97448818e509d5169019dfe14} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} p1\+\_\+left}
+
+\Hypertarget{model_8c_a5d82a3694750d63936d90870a452afdf}\index{model.c@{model.c}!p1\_right@{p1\_right}}
+\index{p1\_right@{p1\_right}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{p1\_right}{p1\_right}}
+{\footnotesize\ttfamily \label{model_8c_a5d82a3694750d63936d90870a452afdf} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} p1\+\_\+right}
+
+\Hypertarget{model_8c_a93df23e94a84a3fee22f0fa11f5c8acc}\index{model.c@{model.c}!p1\_up@{p1\_up}}
+\index{p1\_up@{p1\_up}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{p1\_up}{p1\_up}}
+{\footnotesize\ttfamily \label{model_8c_a93df23e94a84a3fee22f0fa11f5c8acc} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} p1\+\_\+up}
+
+\Hypertarget{model_8c_aebeecf95f198a2339fe0a42538d2828b}\index{model.c@{model.c}!p1win@{p1win}}
+\index{p1win@{p1win}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{p1win}{p1win}}
+{\footnotesize\ttfamily \label{model_8c_aebeecf95f198a2339fe0a42538d2828b} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} p1win}
+
+\Hypertarget{model_8c_a3659d911bd743816ebe64e8bf948c770}\index{model.c@{model.c}!p2\_counter\_territory@{p2\_counter\_territory}}
+\index{p2\_counter\_territory@{p2\_counter\_territory}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{p2\_counter\_territory}{p2\_counter\_territory}}
+{\footnotesize\ttfamily \label{model_8c_a3659d911bd743816ebe64e8bf948c770} 
+int p2\+\_\+counter\+\_\+territory\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{model_8c_a65bcbb46fdd9f66560ae315a74d7ffb0}\index{model.c@{model.c}!p2\_down@{p2\_down}}
+\index{p2\_down@{p2\_down}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{p2\_down}{p2\_down}}
+{\footnotesize\ttfamily \label{model_8c_a65bcbb46fdd9f66560ae315a74d7ffb0} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} p2\+\_\+down}
+
+\Hypertarget{model_8c_a90fc3e9d213e22ea3ef199306dab006b}\index{model.c@{model.c}!p2\_left@{p2\_left}}
+\index{p2\_left@{p2\_left}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{p2\_left}{p2\_left}}
+{\footnotesize\ttfamily \label{model_8c_a90fc3e9d213e22ea3ef199306dab006b} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} p2\+\_\+left}
+
+\Hypertarget{model_8c_a548ca5cfdc37247495a2acb33208527d}\index{model.c@{model.c}!p2\_right@{p2\_right}}
+\index{p2\_right@{p2\_right}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{p2\_right}{p2\_right}}
+{\footnotesize\ttfamily \label{model_8c_a548ca5cfdc37247495a2acb33208527d} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} p2\+\_\+right}
+
+\Hypertarget{model_8c_a680060b9027c320c14d49a6ca6c6dfbf}\index{model.c@{model.c}!p2\_up@{p2\_up}}
+\index{p2\_up@{p2\_up}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{p2\_up}{p2\_up}}
+{\footnotesize\ttfamily \label{model_8c_a680060b9027c320c14d49a6ca6c6dfbf} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} p2\+\_\+up}
+
+\Hypertarget{model_8c_a222e5b97f3d3ce8abc54b2cd16e13f31}\index{model.c@{model.c}!p2win@{p2win}}
+\index{p2win@{p2win}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{p2win}{p2win}}
+{\footnotesize\ttfamily \label{model_8c_a222e5b97f3d3ce8abc54b2cd16e13f31} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} p2win}
+
+\Hypertarget{model_8c_ab02129822f171f866b358d080a5964b1}\index{model.c@{model.c}!percentage@{percentage}}
+\index{percentage@{percentage}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{percentage}{percentage}}
+{\footnotesize\ttfamily \label{model_8c_ab02129822f171f866b358d080a5964b1} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} percentage}
+
+\Hypertarget{model_8c_a2b671abef1747815d90695e78d87efdf}\index{model.c@{model.c}!player1@{player1}}
+\index{player1@{player1}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{player1}{player1}}
+{\footnotesize\ttfamily \label{model_8c_a2b671abef1747815d90695e78d87efdf} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} player1}
+
+\Hypertarget{model_8c_a3bf6cee8ebfcf0855e6439ea42464971}\index{model.c@{model.c}!player1\_info@{player1\_info}}
+\index{player1\_info@{player1\_info}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{player1\_info}{player1\_info}}
+{\footnotesize\ttfamily \label{model_8c_a3bf6cee8ebfcf0855e6439ea42464971} 
+\mbox{\hyperlink{struct_player_info}{Player\+Info}} player1\+\_\+info\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{model_8c_adb299685d4ece460f5c798bd2a180a69}\index{model.c@{model.c}!player2@{player2}}
+\index{player2@{player2}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{player2}{player2}}
+{\footnotesize\ttfamily \label{model_8c_adb299685d4ece460f5c798bd2a180a69} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} player2}
+
+\Hypertarget{model_8c_a021963ca09897b52f15d7260024bd80c}\index{model.c@{model.c}!player2\_info@{player2\_info}}
+\index{player2\_info@{player2\_info}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{player2\_info}{player2\_info}}
+{\footnotesize\ttfamily \label{model_8c_a021963ca09897b52f15d7260024bd80c} 
+\mbox{\hyperlink{struct_player_info}{Player\+Info}} player2\+\_\+info\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{model_8c_a132ba96da5ba28448b61e42c019312a9}\index{model.c@{model.c}!pressed@{pressed}}
+\index{pressed@{pressed}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{pressed}{pressed}}
+{\footnotesize\ttfamily \label{model_8c_a132ba96da5ba28448b61e42c019312a9} 
+bool pressed = false}
+
+\Hypertarget{model_8c_ad2f53dc1489563248680ba3f8044395c}\index{model.c@{model.c}!pressed2@{pressed2}}
+\index{pressed2@{pressed2}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{pressed2}{pressed2}}
+{\footnotesize\ttfamily \label{model_8c_ad2f53dc1489563248680ba3f8044395c} 
+bool pressed2 = false}
+
+\Hypertarget{model_8c_aa1de7a5557e9d96b83cf03f73c92163f}\index{model.c@{model.c}!scancode@{scancode}}
+\index{scancode@{scancode}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{scancode}{scancode}}
+{\footnotesize\ttfamily \label{model_8c_aa1de7a5557e9d96b83cf03f73c92163f} 
+uint8\+\_\+t scancode\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{model_8c_ac705089b22877f6322d09a9f0f5bdb1d}\index{model.c@{model.c}!systemState@{systemState}}
+\index{systemState@{systemState}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{systemState}{systemState}}
+{\footnotesize\ttfamily \label{model_8c_ac705089b22877f6322d09a9f0f5bdb1d} 
+\mbox{\hyperlink{model_8h_aa51313be2faacb739a18fdeecefbac75}{System\+State}} system\+State = \mbox{\hyperlink{model_8h_aa51313be2faacb739a18fdeecefbac75a439c688a4e9ed31638d5922a50680a8e}{RUN}}}
+
+\Hypertarget{model_8c_a0f08eb193e0aedb134a1481913b6a823}\index{model.c@{model.c}!timer\_counter@{timer\_counter}}
+\index{timer\_counter@{timer\_counter}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{timer\_counter}{timer\_counter}}
+{\footnotesize\ttfamily \label{model_8c_a0f08eb193e0aedb134a1481913b6a823} 
+int timer\+\_\+counter\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{model_8c_a923796b48e02f0e0c16dfff48ca1cd84}\index{model.c@{model.c}!two\_byte@{two\_byte}}
+\index{two\_byte@{two\_byte}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{two\_byte}{two\_byte}}
+{\footnotesize\ttfamily \label{model_8c_a923796b48e02f0e0c16dfff48ca1cd84} 
+bool two\+\_\+byte\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{model_8c_ad8555e76b59376c4a4f1ae100513ccc3}\index{model.c@{model.c}!twopoints@{twopoints}}
+\index{twopoints@{twopoints}!model.c@{model.c}}
+\doxysubsubsection{\texorpdfstring{twopoints}{twopoints}}
+{\footnotesize\ttfamily \label{model_8c_ad8555e76b59376c4a4f1ae100513ccc3} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} twopoints}
+

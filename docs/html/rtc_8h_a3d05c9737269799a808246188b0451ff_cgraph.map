@@ -1,0 +1,14 @@
+<map id="rtc_initialize" name="rtc_initialize">
+<area shape="rect" id="Node000001" title="Function that initializes the RTC." alt="" coords="5,31,96,57"/>
+<area shape="rect" id="Node000002" href="$rtc_8c.html#ab4e461393be9c7e0d77d8452592906fd" title="Function that updates the date of the RTC." alt="" coords="144,31,236,57"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,41,128,41,128,47,96,47"/>
+<area shape="rect" id="Node000003" href="$rtc_8c.html#ad56f47475dc37ed1ff384ec99a39492a" title="Function that checks if the RTC is updating." alt="" coords="284,5,429,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="236,34,268,29,269,35,237,40"/>
+<area shape="rect" id="Node000006" href="$rtc_8c.html#ad339dc3479fae2540f9e3d27fa3a1a5f" title="Function that, first, checks if the RTC is in binary mode and, if so, gets the time in binary...." alt="" coords="292,56,422,83"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="237,48,277,55,276,60,236,54"/>
+<area shape="rect" id="Node000004" href="$rtc_8c.html#a3d02f3eee33b89342c7c96381a59658f" title="Function that reads from the RTC." alt="" coords="477,31,578,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="430,27,462,32,462,37,429,32"/>
+<area shape="rect" id="Node000005" href="$utils_8c.html#a2b56f50ba159e9d5115ed1a75eff15d9" title="Function that fetches a 8&#45;bit value instead of a 32&#45;bit value, using sys_inb()." alt="" coords="626,31,716,57"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="578,41,610,41,610,47,578,47"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="422,57,462,51,462,56,422,62"/>
+</map>

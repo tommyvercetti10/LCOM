@@ -1,0 +1,245 @@
+\doxysection{C\+:/\+Users/\+Utilizador/\+Desktop/\+MINIX-\/\+LCOM/shared/g2/src/proj.c File Reference}
+\hypertarget{proj_8c}{}\label{proj_8c}\index{C:/Users/Utilizador/Desktop/MINIX-\/LCOM/shared/g2/src/proj.c@{C:/Users/Utilizador/Desktop/MINIX-\/LCOM/shared/g2/src/proj.c}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include "{}configs.\+h"{}}\newline
+{\ttfamily \#include "{}controller/timer/timer.\+h"{}}\newline
+{\ttfamily \#include "{}controller/graphics/graphics.\+h"{}}\newline
+{\ttfamily \#include "{}controller/keyboard/keyboard.\+h"{}}\newline
+{\ttfamily \#include "{}controller/mouse/mouse.\+h"{}}\newline
+{\ttfamily \#include "{}controller/rtc/rtc.\+h"{}}\newline
+{\ttfamily \#include "{}view/view.\+h"{}}\newline
+{\ttfamily \#include "{}model/model.\+h"{}}\newline
+{\ttfamily \#include "{}game/game.\+h"{}}\newline
+Include dependency graph for proj.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{proj_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{proj_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\item 
+int \mbox{\hyperlink{proj_8c_ad5e0d58a89c6c93ee854fc5b99c99256}{initialize\+\_\+game}} ()
+\begin{DoxyCompactList}\small\item\em Function that initializes all components of the game. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{proj_8c_a2901e4ca9772002ad72cd7e02bf1d1ad}{shutting\+\_\+down\+\_\+game}} ()
+\begin{DoxyCompactList}\small\item\em Function that shuts down all components of the game. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{proj_8c_a7a72220d8366dd84709e79ce415862e5}{proj\+\_\+main\+\_\+loop}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Main loop of the game, that handles all the interrupts and the game logic. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{proj_8c_a2f5be4ef54ee5ab425bdbd31d44307ec}{timer\+\_\+id}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{proj_8c_a08493ae8d777ca3e2646324e935de264}{keyboard\+\_\+id}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{proj_8c_a508e19a6d285f70b1e545c3791127078}{mouse\+\_\+id}}
+\item 
+\mbox{\hyperlink{model_8h_aa51313be2faacb739a18fdeecefbac75}{System\+State}} \mbox{\hyperlink{proj_8c_ac705089b22877f6322d09a9f0f5bdb1d}{system\+State}}
+\item 
+\mbox{\hyperlink{struct_player_info}{Player\+Info}} \mbox{\hyperlink{proj_8c_a3bf6cee8ebfcf0855e6439ea42464971}{player1\+\_\+info}}
+\item 
+\mbox{\hyperlink{struct_player_info}{Player\+Info}} \mbox{\hyperlink{proj_8c_a021963ca09897b52f15d7260024bd80c}{player2\+\_\+info}}
+\item 
+int \mbox{\hyperlink{proj_8c_a0f08eb193e0aedb134a1481913b6a823}{timer\+\_\+counter}}
+\item 
+int \mbox{\hyperlink{proj_8c_a54d604d47c6a588a47639f1a816933ec}{game\+\_\+counter}}
+\item 
+\mbox{\hyperlink{model_8h_aa3041ae4242c0dd57a126d17505443b2}{Menu\+State}} \mbox{\hyperlink{proj_8c_a92b62ab09159876ce3ca4dc9340931ca}{menu\+State}}
+\item 
+\mbox{\hyperlink{struct_mouse_info}{Mouse\+Info}} \mbox{\hyperlink{proj_8c_a343e4f854a0c3e5001228e209c5f025e}{mouse\+\_\+info}}
+\item 
+vbe\+\_\+mode\+\_\+info\+\_\+t \mbox{\hyperlink{proj_8c_a9fcc2243068f8e628648febc0909c509}{mode\+\_\+info}}
+\begin{DoxyCompactList}\small\item\em Struct that represents the mode information. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_arena}{Arena}} \mbox{\hyperlink{proj_8c_a62ee190400a1c0c9cc3f516aa195a70d}{arena\+\_\+matrix}}
+\item 
+enum \mbox{\hyperlink{player_8h_a99f26e6ee9fcd62f75203b5402df8098}{direction}} \mbox{\hyperlink{proj_8c_ae76907a57e14f4d1a0dc37082e70373d}{aux\+\_\+dir\+\_\+p1}}
+\item 
+enum \mbox{\hyperlink{player_8h_a99f26e6ee9fcd62f75203b5402df8098}{direction}} \mbox{\hyperlink{proj_8c_a76dcba2ba21ceb9c5cc6835ceb2c5d85}{aux\+\_\+dir\+\_\+p2}}
+\item 
+\mbox{\hyperlink{struct_sprite}{Sprite}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{proj_8c_a918205e03af24831682761500b1493e1}{num\+Sprites}} \mbox{[}10\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{proj_8c_ad5e0d58a89c6c93ee854fc5b99c99256}\index{proj.c@{proj.c}!initialize\_game@{initialize\_game}}
+\index{initialize\_game@{initialize\_game}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{initialize\_game()}{initialize\_game()}}
+{\footnotesize\ttfamily \label{proj_8c_ad5e0d58a89c6c93ee854fc5b99c99256} 
+int initialize\+\_\+game (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function that initializes all components of the game. 
+
+\begin{DoxyReturn}{Returns}
+0 if the game was successfully initialized, 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{proj_8c_ad5e0d58a89c6c93ee854fc5b99c99256_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{proj_8c_ad5e0d58a89c6c93ee854fc5b99c99256_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{proj_8c_a0ddf1224851353fc92bfbff6f499fa97}\index{proj.c@{proj.c}!main@{main}}
+\index{main@{main}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{proj_8c_a0ddf1224851353fc92bfbff6f499fa97} 
+int main (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{argv}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
+
+\Hypertarget{proj_8c_a7a72220d8366dd84709e79ce415862e5}\index{proj.c@{proj.c}!proj\_main\_loop@{proj\_main\_loop}}
+\index{proj\_main\_loop@{proj\_main\_loop}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{proj\_main\_loop()}{proj\_main\_loop()}}
+{\footnotesize\ttfamily \label{proj_8c_a7a72220d8366dd84709e79ce415862e5} 
+int proj\+\_\+main\+\_\+loop (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{argv}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Main loop of the game, that handles all the interrupts and the game logic. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{proj_8c_a7a72220d8366dd84709e79ce415862e5_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{proj_8c_a2901e4ca9772002ad72cd7e02bf1d1ad}\index{proj.c@{proj.c}!shutting\_down\_game@{shutting\_down\_game}}
+\index{shutting\_down\_game@{shutting\_down\_game}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{shutting\_down\_game()}{shutting\_down\_game()}}
+{\footnotesize\ttfamily \label{proj_8c_a2901e4ca9772002ad72cd7e02bf1d1ad} 
+int shutting\+\_\+down\+\_\+game (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Function that shuts down all components of the game. 
+
+\begin{DoxyReturn}{Returns}
+0 if the game was successfully shut down, 1 otherwise. 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{proj_8c_a2901e4ca9772002ad72cd7e02bf1d1ad_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{proj_8c_a2901e4ca9772002ad72cd7e02bf1d1ad_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{proj_8c_a62ee190400a1c0c9cc3f516aa195a70d}\index{proj.c@{proj.c}!arena\_matrix@{arena\_matrix}}
+\index{arena\_matrix@{arena\_matrix}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{arena\_matrix}{arena\_matrix}}
+{\footnotesize\ttfamily \label{proj_8c_a62ee190400a1c0c9cc3f516aa195a70d} 
+\mbox{\hyperlink{struct_arena}{Arena}} arena\+\_\+matrix\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{proj_8c_ae76907a57e14f4d1a0dc37082e70373d}\index{proj.c@{proj.c}!aux\_dir\_p1@{aux\_dir\_p1}}
+\index{aux\_dir\_p1@{aux\_dir\_p1}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{aux\_dir\_p1}{aux\_dir\_p1}}
+{\footnotesize\ttfamily \label{proj_8c_ae76907a57e14f4d1a0dc37082e70373d} 
+enum \mbox{\hyperlink{player_8h_a99f26e6ee9fcd62f75203b5402df8098}{direction}} aux\+\_\+dir\+\_\+p1\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{proj_8c_a76dcba2ba21ceb9c5cc6835ceb2c5d85}\index{proj.c@{proj.c}!aux\_dir\_p2@{aux\_dir\_p2}}
+\index{aux\_dir\_p2@{aux\_dir\_p2}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{aux\_dir\_p2}{aux\_dir\_p2}}
+{\footnotesize\ttfamily \label{proj_8c_a76dcba2ba21ceb9c5cc6835ceb2c5d85} 
+enum \mbox{\hyperlink{player_8h_a99f26e6ee9fcd62f75203b5402df8098}{direction}} aux\+\_\+dir\+\_\+p2\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{proj_8c_a54d604d47c6a588a47639f1a816933ec}\index{proj.c@{proj.c}!game\_counter@{game\_counter}}
+\index{game\_counter@{game\_counter}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{game\_counter}{game\_counter}}
+{\footnotesize\ttfamily \label{proj_8c_a54d604d47c6a588a47639f1a816933ec} 
+int game\+\_\+counter\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{proj_8c_a08493ae8d777ca3e2646324e935de264}\index{proj.c@{proj.c}!keyboard\_id@{keyboard\_id}}
+\index{keyboard\_id@{keyboard\_id}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{keyboard\_id}{keyboard\_id}}
+{\footnotesize\ttfamily \label{proj_8c_a08493ae8d777ca3e2646324e935de264} 
+uint8\+\_\+t keyboard\+\_\+id}
+
+\Hypertarget{proj_8c_a92b62ab09159876ce3ca4dc9340931ca}\index{proj.c@{proj.c}!menuState@{menuState}}
+\index{menuState@{menuState}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{menuState}{menuState}}
+{\footnotesize\ttfamily \label{proj_8c_a92b62ab09159876ce3ca4dc9340931ca} 
+\mbox{\hyperlink{model_8h_aa3041ae4242c0dd57a126d17505443b2}{Menu\+State}} menu\+State\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{proj_8c_a9fcc2243068f8e628648febc0909c509}\index{proj.c@{proj.c}!mode\_info@{mode\_info}}
+\index{mode\_info@{mode\_info}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{mode\_info}{mode\_info}}
+{\footnotesize\ttfamily \label{proj_8c_a9fcc2243068f8e628648febc0909c509} 
+vbe\+\_\+mode\+\_\+info\+\_\+t mode\+\_\+info\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Struct that represents the mode information. 
+
+\Hypertarget{proj_8c_a508e19a6d285f70b1e545c3791127078}\index{proj.c@{proj.c}!mouse\_id@{mouse\_id}}
+\index{mouse\_id@{mouse\_id}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_id}{mouse\_id}}
+{\footnotesize\ttfamily \label{proj_8c_a508e19a6d285f70b1e545c3791127078} 
+uint8\+\_\+t mouse\+\_\+id}
+
+\Hypertarget{proj_8c_a343e4f854a0c3e5001228e209c5f025e}\index{proj.c@{proj.c}!mouse\_info@{mouse\_info}}
+\index{mouse\_info@{mouse\_info}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{mouse\_info}{mouse\_info}}
+{\footnotesize\ttfamily \label{proj_8c_a343e4f854a0c3e5001228e209c5f025e} 
+\mbox{\hyperlink{struct_mouse_info}{Mouse\+Info}} mouse\+\_\+info\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{proj_8c_a918205e03af24831682761500b1493e1}\index{proj.c@{proj.c}!numSprites@{numSprites}}
+\index{numSprites@{numSprites}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{numSprites}{numSprites}}
+{\footnotesize\ttfamily \label{proj_8c_a918205e03af24831682761500b1493e1} 
+\mbox{\hyperlink{struct_sprite}{Sprite}}\texorpdfstring{$\ast$}{*} num\+Sprites\mbox{[}10\mbox{]}}
+
+\Hypertarget{proj_8c_a3bf6cee8ebfcf0855e6439ea42464971}\index{proj.c@{proj.c}!player1\_info@{player1\_info}}
+\index{player1\_info@{player1\_info}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{player1\_info}{player1\_info}}
+{\footnotesize\ttfamily \label{proj_8c_a3bf6cee8ebfcf0855e6439ea42464971} 
+\mbox{\hyperlink{struct_player_info}{Player\+Info}} player1\+\_\+info\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{proj_8c_a021963ca09897b52f15d7260024bd80c}\index{proj.c@{proj.c}!player2\_info@{player2\_info}}
+\index{player2\_info@{player2\_info}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{player2\_info}{player2\_info}}
+{\footnotesize\ttfamily \label{proj_8c_a021963ca09897b52f15d7260024bd80c} 
+\mbox{\hyperlink{struct_player_info}{Player\+Info}} player2\+\_\+info\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{proj_8c_ac705089b22877f6322d09a9f0f5bdb1d}\index{proj.c@{proj.c}!systemState@{systemState}}
+\index{systemState@{systemState}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{systemState}{systemState}}
+{\footnotesize\ttfamily \label{proj_8c_ac705089b22877f6322d09a9f0f5bdb1d} 
+\mbox{\hyperlink{model_8h_aa51313be2faacb739a18fdeecefbac75}{System\+State}} system\+State\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{proj_8c_a0f08eb193e0aedb134a1481913b6a823}\index{proj.c@{proj.c}!timer\_counter@{timer\_counter}}
+\index{timer\_counter@{timer\_counter}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{timer\_counter}{timer\_counter}}
+{\footnotesize\ttfamily \label{proj_8c_a0f08eb193e0aedb134a1481913b6a823} 
+int timer\+\_\+counter\hspace{0.3cm}{\ttfamily [extern]}}
+
+\Hypertarget{proj_8c_a2f5be4ef54ee5ab425bdbd31d44307ec}\index{proj.c@{proj.c}!timer\_id@{timer\_id}}
+\index{timer\_id@{timer\_id}!proj.c@{proj.c}}
+\doxysubsubsection{\texorpdfstring{timer\_id}{timer\_id}}
+{\footnotesize\ttfamily \label{proj_8c_a2f5be4ef54ee5ab425bdbd31d44307ec} 
+uint8\+\_\+t timer\+\_\+id}
+

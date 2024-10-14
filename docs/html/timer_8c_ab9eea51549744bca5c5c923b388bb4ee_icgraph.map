@@ -1,0 +1,7 @@
+<map id="timer_unsubscribe_int" name="timer_unsubscribe_int">
+<area shape="rect" id="Node000001" title="Function that unsubscribes the timer interruptions." alt="" coords="353,5,501,32"/>
+<area shape="rect" id="Node000002" href="$proj_8c.html#a2901e4ca9772002ad72cd7e02bf1d1ad" title="Function that shuts down all components of the game." alt="" coords="162,5,305,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="337,21,306,21,306,16,337,16"/>
+<area shape="rect" id="Node000003" href="$proj_8c.html#a7a72220d8366dd84709e79ce415862e5" title="Main loop of the game, that handles all the interrupts and the game logic." alt="" coords="5,5,114,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="146,21,114,21,114,16,146,16"/>
+</map>

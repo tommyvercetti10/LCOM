@@ -1,0 +1,158 @@
+\doxysection{C\+:/\+Users/\+Utilizador/\+Desktop/\+MINIX-\/\+LCOM/shared/g2/src/model/player.c File Reference}
+\hypertarget{player_8c}{}\label{player_8c}\index{C:/Users/Utilizador/Desktop/MINIX-\/LCOM/shared/g2/src/model/player.c@{C:/Users/Utilizador/Desktop/MINIX-\/LCOM/shared/g2/src/model/player.c}}
+{\ttfamily \#include "{}player.\+h"{}}\newline
+Include dependency graph for player.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{player_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{player_8c_abbf0ac4bc183056c7f6d703e9122edb2}{move\+\_\+player\+\_\+up}} (\mbox{\hyperlink{struct_player_info}{Player\+Info}} \texorpdfstring{$\ast$}{*}player\+\_\+info)
+\begin{DoxyCompactList}\small\item\em Function that moves the player up. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{player_8c_ac5ba5dde7665d6c25d9ff5e1d11b4ad6}{move\+\_\+player\+\_\+down}} (\mbox{\hyperlink{struct_player_info}{Player\+Info}} \texorpdfstring{$\ast$}{*}player\+\_\+info)
+\begin{DoxyCompactList}\small\item\em Function that moves the player down. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{player_8c_ad5d3bf7cd90c0c21798adff51d26dabe}{move\+\_\+player\+\_\+left}} (\mbox{\hyperlink{struct_player_info}{Player\+Info}} \texorpdfstring{$\ast$}{*}player\+\_\+info)
+\begin{DoxyCompactList}\small\item\em Function that moves the player left. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{player_8c_aaa620c016a2b15930bc3a221449a7784}{move\+\_\+player\+\_\+right}} (\mbox{\hyperlink{struct_player_info}{Player\+Info}} \texorpdfstring{$\ast$}{*}player\+\_\+info)
+\begin{DoxyCompactList}\small\item\em Function that moves the player right. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_player_info}{Player\+Info}} \mbox{\hyperlink{player_8c_a3bf6cee8ebfcf0855e6439ea42464971}{player1\+\_\+info}}
+\item 
+\mbox{\hyperlink{struct_player_info}{Player\+Info}} \mbox{\hyperlink{player_8c_a021963ca09897b52f15d7260024bd80c}{player2\+\_\+info}}
+\item 
+vbe\+\_\+mode\+\_\+info\+\_\+t \mbox{\hyperlink{player_8c_a9fcc2243068f8e628648febc0909c509}{mode\+\_\+info}}
+\begin{DoxyCompactList}\small\item\em Struct that represents the mode information. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{player_8c_ac5ba5dde7665d6c25d9ff5e1d11b4ad6}\index{player.c@{player.c}!move\_player\_down@{move\_player\_down}}
+\index{move\_player\_down@{move\_player\_down}!player.c@{player.c}}
+\doxysubsubsection{\texorpdfstring{move\_player\_down()}{move\_player\_down()}}
+{\footnotesize\ttfamily \label{player_8c_ac5ba5dde7665d6c25d9ff5e1d11b4ad6} 
+int move\+\_\+player\+\_\+down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_player_info}{Player\+Info}} \texorpdfstring{$\ast$}{*}}]{player\+Info}{}\end{DoxyParamCaption})}
+
+
+
+Function that moves the player down. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+\_\+info} & Struct with the player information. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the player successfully moved down, 1 otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{player_8c_ac5ba5dde7665d6c25d9ff5e1d11b4ad6_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{player_8c_ad5d3bf7cd90c0c21798adff51d26dabe}\index{player.c@{player.c}!move\_player\_left@{move\_player\_left}}
+\index{move\_player\_left@{move\_player\_left}!player.c@{player.c}}
+\doxysubsubsection{\texorpdfstring{move\_player\_left()}{move\_player\_left()}}
+{\footnotesize\ttfamily \label{player_8c_ad5d3bf7cd90c0c21798adff51d26dabe} 
+int move\+\_\+player\+\_\+left (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_player_info}{Player\+Info}} \texorpdfstring{$\ast$}{*}}]{player\+Info}{}\end{DoxyParamCaption})}
+
+
+
+Function that moves the player left. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+\_\+info} & Struct with the player information. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the player successfully moved left, 1 otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{player_8c_ad5d3bf7cd90c0c21798adff51d26dabe_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{player_8c_aaa620c016a2b15930bc3a221449a7784}\index{player.c@{player.c}!move\_player\_right@{move\_player\_right}}
+\index{move\_player\_right@{move\_player\_right}!player.c@{player.c}}
+\doxysubsubsection{\texorpdfstring{move\_player\_right()}{move\_player\_right()}}
+{\footnotesize\ttfamily \label{player_8c_aaa620c016a2b15930bc3a221449a7784} 
+int move\+\_\+player\+\_\+right (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_player_info}{Player\+Info}} \texorpdfstring{$\ast$}{*}}]{player\+Info}{}\end{DoxyParamCaption})}
+
+
+
+Function that moves the player right. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+\_\+info} & Struct with the player information. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the player successfully moved right, 1 otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{player_8c_aaa620c016a2b15930bc3a221449a7784_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{player_8c_abbf0ac4bc183056c7f6d703e9122edb2}\index{player.c@{player.c}!move\_player\_up@{move\_player\_up}}
+\index{move\_player\_up@{move\_player\_up}!player.c@{player.c}}
+\doxysubsubsection{\texorpdfstring{move\_player\_up()}{move\_player\_up()}}
+{\footnotesize\ttfamily \label{player_8c_abbf0ac4bc183056c7f6d703e9122edb2} 
+int move\+\_\+player\+\_\+up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_player_info}{Player\+Info}} \texorpdfstring{$\ast$}{*}}]{player\+Info}{}\end{DoxyParamCaption})}
+
+
+
+Function that moves the player up. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+\_\+info} & Struct with the player information. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if the player successfully moved up, 1 otherwise. 
+\end{DoxyReturn}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{player_8c_abbf0ac4bc183056c7f6d703e9122edb2_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{player_8c_a9fcc2243068f8e628648febc0909c509}\index{player.c@{player.c}!mode\_info@{mode\_info}}
+\index{mode\_info@{mode\_info}!player.c@{player.c}}
+\doxysubsubsection{\texorpdfstring{mode\_info}{mode\_info}}
+{\footnotesize\ttfamily \label{player_8c_a9fcc2243068f8e628648febc0909c509} 
+vbe\+\_\+mode\+\_\+info\+\_\+t mode\+\_\+info\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Struct that represents the mode information. 
+
+\Hypertarget{player_8c_a3bf6cee8ebfcf0855e6439ea42464971}\index{player.c@{player.c}!player1\_info@{player1\_info}}
+\index{player1\_info@{player1\_info}!player.c@{player.c}}
+\doxysubsubsection{\texorpdfstring{player1\_info}{player1\_info}}
+{\footnotesize\ttfamily \label{player_8c_a3bf6cee8ebfcf0855e6439ea42464971} 
+\mbox{\hyperlink{struct_player_info}{Player\+Info}} player1\+\_\+info}
+
+\Hypertarget{player_8c_a021963ca09897b52f15d7260024bd80c}\index{player.c@{player.c}!player2\_info@{player2\_info}}
+\index{player2\_info@{player2\_info}!player.c@{player.c}}
+\doxysubsubsection{\texorpdfstring{player2\_info}{player2\_info}}
+{\footnotesize\ttfamily \label{player_8c_a021963ca09897b52f15d7260024bd80c} 
+\mbox{\hyperlink{struct_player_info}{Player\+Info}} player2\+\_\+info}
+

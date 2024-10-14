@@ -1,0 +1,16 @@
+<map id="draw_game" name="draw_game">
+<area shape="rect" id="Node000001" title="Function that draws the game on the screen, according to the current state of the game,..." alt="" coords="5,81,93,108"/>
+<area shape="rect" id="Node000002" href="$view_8c.html#a8f31c752e5a0e9103ca488e57ca746cc" title="Function that draws the arena on the screen." alt="" coords="317,5,404,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,80,140,67,301,29,302,34,141,72,94,85"/>
+<area shape="rect" id="Node000004" href="$view_8c.html#ae621f77b903bc589198ba904aaf8f838" title="Function that draws the scoreboard on the screen of the game, according to the current score,..." alt="" coords="141,81,260,108"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="93,92,125,92,125,97,93,97"/>
+<area shape="rect" id="Node000006" href="$view_8c.html#a1c3347daa6300db135c4b7ddd9596826" title="Function that draws a sprite on the screen." alt="" coords="461,81,581,108"/>
+<area shape="poly" id="edge8_Node000001_Node000006" title=" " alt="" coords="91,106,141,117,222,123,304,122,381,115,446,106,447,111,381,120,305,127,222,129,140,123,90,111"/>
+<area shape="rect" id="Node000003" href="$graphics_8c.html#a3a336b12ce50ab3c4413144515ac6a93" title="Function that draws a pixel on the screen." alt="" coords="629,56,711,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="405,23,614,58,613,63,404,28"/>
+<area shape="rect" id="Node000005" href="$view_8c.html#a8516cf9221b1daa926c77483a2f59cf6" title="Function that draws the numbers on the screen, according to the current time." alt="" coords="308,56,413,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="260,83,292,77,293,83,261,88"/>
+<area shape="poly" id="edge7_Node000004_Node000006" title=" " alt="" coords="260,92,445,92,445,97,260,97"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="414,75,446,80,445,85,413,80"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="580,82,613,76,614,82,581,87"/>
+</map>

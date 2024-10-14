@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['d_5fkey_0',['D_KEY',['../model_8h.html#a23c8dc1c6696b91ba6b96f2dca53b7ba',1,'model.h']]],
+  ['day_1',['day',['../structrtc__info.html#acd13910f71c92c7532ce3dced95dff7a',1,'rtc_info']]],
+  ['destroy_5fsprite_2',['destroy_sprite',['../sprite_8c.html#a607cfeb4f019a84c346eb3bce9da0420',1,'destroy_sprite(Sprite *sprite):&#160;sprite.c'],['../sprite_8h.html#a607cfeb4f019a84c346eb3bce9da0420',1,'destroy_sprite(Sprite *sprite):&#160;sprite.c']]],
+  ['dir_3',['dir',['../struct_player_info.html#ab69fe8a68b53d4d5a74e7ea7087ae570',1,'PlayerInfo::dir'],['../player_8h.html#aa708146af3bac1ad2312f1c4b6ac7f86',1,'dir:&#160;player.h']]],
+  ['direction_4',['direction',['../player_8h.html#a99f26e6ee9fcd62f75203b5402df8098',1,'player.h']]],
+  ['double_5fbuffering_5',['DOUBLE_BUFFERING',['../configs_8h.html#a89ae7c8a9103972a17a44314f234fecf',1,'configs.h']]],
+  ['down_6',['DOWN',['../player_8h.html#a99f26e6ee9fcd62f75203b5402df8098a9b0b4a95b99523966e0e34ffdadac9da',1,'player.h']]],
+  ['down_5farrow_5fkey_7',['DOWN_ARROW_KEY',['../model_8h.html#af2292687de6b9256a2664a7dacf9ae4a',1,'model.h']]],
+  ['draw_5farena_8',['draw_arena',['../view_8c.html#a8f31c752e5a0e9103ca488e57ca746cc',1,'draw_arena(Sprite *sprite):&#160;view.c'],['../view_8h.html#a8f31c752e5a0e9103ca488e57ca746cc',1,'draw_arena(Sprite *sprite):&#160;view.c']]],
+  ['draw_5fcontrols_5fmenu_9',['draw_controls_menu',['../view_8c.html#ab893d4d9bfe64e67ae91809826d943b3',1,'draw_controls_menu():&#160;view.c'],['../view_8h.html#ab893d4d9bfe64e67ae91809826d943b3',1,'draw_controls_menu():&#160;view.c']]],
+  ['draw_5fend_5fmenu_10',['draw_end_menu',['../view_8c.html#aa72c0c9d88ccd3fde2b5893fbe236b83',1,'draw_end_menu():&#160;view.c'],['../view_8h.html#aa72c0c9d88ccd3fde2b5893fbe236b83',1,'draw_end_menu():&#160;view.c']]],
+  ['draw_5fendmenu_5fscore_11',['draw_endmenu_score',['../view_8c.html#a59f2790dea065ab24a3750d93b1a47cd',1,'draw_endmenu_score(int winner):&#160;view.c'],['../view_8h.html#a59f2790dea065ab24a3750d93b1a47cd',1,'draw_endmenu_score(int winner):&#160;view.c']]],
+  ['draw_5fgame_12',['draw_game',['../view_8c.html#a7e6baca1b635c8aadd95c4d821cda8fc',1,'draw_game():&#160;view.c'],['../view_8h.html#a7e6baca1b635c8aadd95c4d821cda8fc',1,'draw_game():&#160;view.c']]],
+  ['draw_5finitial_5fmenu_13',['draw_initial_menu',['../view_8c.html#a2e293823f22abda1c98f45d8035282d8',1,'draw_initial_menu():&#160;view.c'],['../view_8h.html#a2e293823f22abda1c98f45d8035282d8',1,'draw_initial_menu():&#160;view.c']]],
+  ['draw_5fmouse_14',['draw_mouse',['../view_8c.html#a42f4903ab89aff9e3ee0206c52cf710a',1,'draw_mouse():&#160;view.c'],['../view_8h.html#a42f4903ab89aff9e3ee0206c52cf710a',1,'draw_mouse():&#160;view.c']]],
+  ['draw_5fnext_5fframe_15',['draw_next_frame',['../view_8c.html#aad71fad632657831b2063742509f06ca',1,'draw_next_frame():&#160;view.c'],['../view_8h.html#aad71fad632657831b2063742509f06ca',1,'draw_next_frame():&#160;view.c']]],
+  ['draw_5fnumbers_16',['draw_numbers',['../view_8c.html#a8516cf9221b1daa926c77483a2f59cf6',1,'draw_numbers(Sprite *num, int x, int y):&#160;view.c'],['../view_8h.html#a8516cf9221b1daa926c77483a2f59cf6',1,'draw_numbers(Sprite *num, int x, int y):&#160;view.c']]],
+  ['draw_5fpixel_17',['draw_pixel',['../graphics_8c.html#a3a336b12ce50ab3c4413144515ac6a93',1,'draw_pixel(uint16_t x, uint16_t y, uint32_t color, uint8_t *frame_buffer):&#160;graphics.c'],['../graphics_8h.html#a3a336b12ce50ab3c4413144515ac6a93',1,'draw_pixel(uint16_t x, uint16_t y, uint32_t color, uint8_t *frame_buffer):&#160;graphics.c']]],
+  ['draw_5fscoreboard_18',['draw_scoreboard',['../view_8c.html#ae621f77b903bc589198ba904aaf8f838',1,'draw_scoreboard():&#160;view.c'],['../view_8h.html#ae621f77b903bc589198ba904aaf8f838',1,'draw_scoreboard():&#160;view.c']]],
+  ['draw_5fsprite_5fxpm_19',['draw_sprite_xpm',['../view_8c.html#a1c3347daa6300db135c4b7ddd9596826',1,'draw_sprite_xpm(Sprite *sprite, int x, int y, uint8_t *buffer):&#160;view.c'],['../view_8h.html#a1c3347daa6300db135c4b7ddd9596826',1,'draw_sprite_xpm(Sprite *sprite, int x, int y, uint8_t *buffer):&#160;view.c']]],
+  ['draw_5ftime_20',['draw_time',['../view_8c.html#a78550ae224ae0ca51b3de81c44477a45',1,'draw_time():&#160;view.c'],['../view_8h.html#a78550ae224ae0ca51b3de81c44477a45',1,'draw_time():&#160;view.c']]],
+  ['draw_5fvline_21',['draw_vline',['../graphics_8c.html#a09b63a9bc0ec362701e1dcae9d4c5f4e',1,'draw_vline(uint16_t x, uint16_t y, uint16_t len, uint32_t color, uint8_t *frame_buffer):&#160;graphics.c'],['../graphics_8h.html#a09b63a9bc0ec362701e1dcae9d4c5f4e',1,'draw_vline(uint16_t x, uint16_t y, uint16_t len, uint32_t color, uint8_t *frame_buffer):&#160;graphics.c']]]
+];

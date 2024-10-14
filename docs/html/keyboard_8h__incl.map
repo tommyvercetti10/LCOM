@@ -1,0 +1,14 @@
+<map id="C:/Users/Utilizador/Desktop/MINIX&#45;LCOM/shared/g2/src/controller/keyboard/keyboard.h" name="C:/Users/Utilizador/Desktop/MINIX&#45;LCOM/shared/g2/src/controller/keyboard/keyboard.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="91,5,252,80"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,203,111,229"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="137,82,99,129,82,160,70,189,65,187,78,157,94,127,132,79"/>
+<area shape="rect" id="Node000003" href="$keyboard_2i8042_8h.html" title=" " alt="" coords="134,203,198,229"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="180,80,183,116,182,155,176,188,171,187,177,154,178,116,175,81"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="222,203,299,229"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="193,79,250,188,245,190,188,82"/>
+<area shape="rect" id="Node000005" href="$keyboard_2_k_b_c_8h.html" title=" " alt="" coords="108,128,168,155"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="161,81,150,114,145,112,156,79"/>
+<area shape="poly" id="edge5_Node000005_Node000002" title=" " alt="" coords="126,157,85,194,81,190,122,153"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="145,154,158,187,153,189,140,156"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="161,153,227,192,225,197,158,158"/>
+</map>

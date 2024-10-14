@@ -1,0 +1,26 @@
+<map id="read_KBC_status" name="read_KBC_status">
+<area shape="rect" id="Node000001" title="Function that reads the status of the KBC." alt="" coords="710,81,833,108"/>
+<area shape="rect" id="Node000002" href="$keyboard_2_k_b_c_8c.html#a52ac1bb096b341741d01d49dd38c0cd4" title="Function that reads the output of the KBC." alt="" coords="527,56,650,83"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="694,87,650,81,651,75,695,81"/>
+<area shape="rect" id="Node000008" href="$keyboard_2_k_b_c_8c.html#af493e7c2f3767eac8d5fe67b86efda01" title="Function that writes a command to the KBC." alt="" coords="515,107,662,133"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="694,108,662,112,662,107,693,103"/>
+<area shape="rect" id="Node000003" href="$keyboard_8c.html#ab9e6ed7960d60aa4834f2038247d4536" title="Function that reads the current scancode of the keyboard from the KBC." alt="" coords="382,5,441,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="524,54,441,30,442,24,525,49"/>
+<area shape="rect" id="Node000006" href="$mouse_8c.html#a834b6d7efe311484d6da234db333cb97" title="Function that reads the current byte of the mouse from the KBC." alt="" coords="373,56,450,83"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="511,72,450,72,450,67,511,67"/>
+<area shape="rect" id="Node000004" href="$model_8c.html#ae625d089b75271d06b8040725b287265" title="Function that changes the state of the keyboard, taking into account the keys pressed...." alt="" coords="174,5,295,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="366,21,295,21,295,16,366,16"/>
+<area shape="rect" id="Node000005" href="$proj_8c.html#a7a72220d8366dd84709e79ce415862e5" title="Main loop of the game, that handles all the interrupts and the game logic." alt="" coords="5,81,114,108"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="178,40,163,46,87,83,85,78,161,42,176,35"/>
+<area shape="rect" id="Node000007" href="$model_8c.html#a980ee1f10a62da504ae4f66e1330482b" title="Function that changes the state of the mouse. In case of pressing the left button,..." alt="" coords="162,56,307,83"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="357,72,307,72,307,67,357,67"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="147,85,114,89,114,84,146,79"/>
+<area shape="rect" id="Node000009" href="$mouse_8c.html#aa4f4b79245304da9acc07cb97e98ee8d" title="Function that writes a command to the mouse." alt="" coords="355,107,467,133"/>
+<area shape="poly" id="edge9_Node000008_Node000009" title=" " alt="" coords="500,123,468,123,468,117,500,117"/>
+<area shape="rect" id="Node000010" href="$proj_8c.html#ad5e0d58a89c6c93ee854fc5b99c99256" title="Function that initializes all components of the game." alt="" coords="181,107,288,133"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="339,123,289,123,289,117,339,117"/>
+<area shape="rect" id="Node000011" href="$proj_8c.html#a2901e4ca9772002ad72cd7e02bf1d1ad" title="Function that shuts down all components of the game." alt="" coords="163,157,306,184"/>
+<area shape="poly" id="edge12_Node000009_Node000011" title=" " alt="" coords="348,141,284,159,283,154,347,136"/>
+<area shape="poly" id="edge11_Node000010_Node000005" title=" " alt="" coords="165,113,114,105,115,100,166,107"/>
+<area shape="poly" id="edge13_Node000011_Node000005" title=" " alt="" coords="176,154,161,148,85,111,87,106,163,143,178,149"/>
+</map>

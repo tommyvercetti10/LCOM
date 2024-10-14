@@ -1,0 +1,10 @@
+<map id="free_menu_buffer" name="free_menu_buffer">
+<area shape="rect" id="Node000001" title="Function frees the buffer used to draw the initial menu." alt="" coords="355,31,474,57"/>
+<area shape="rect" id="Node000002" href="$model_8c.html#a980ee1f10a62da504ae4f66e1330482b" title="Function that changes the state of the mouse. In case of pressing the left button,..." alt="" coords="162,5,307,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="339,36,307,32,308,26,340,31"/>
+<area shape="rect" id="Node000004" href="$proj_8c.html#a2901e4ca9772002ad72cd7e02bf1d1ad" title="Function that shuts down all components of the game." alt="" coords="163,56,306,83"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="340,57,307,62,306,57,339,52"/>
+<area shape="rect" id="Node000003" href="$proj_8c.html#a7a72220d8366dd84709e79ce415862e5" title="Main loop of the game, that handles all the interrupts and the game logic." alt="" coords="5,31,114,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="147,34,114,39,114,34,146,29"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="147,59,114,54,115,49,148,54"/>
+</map>
